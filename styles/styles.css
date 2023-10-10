@@ -1,64 +1,75 @@
-/* Estilos generales */
-body {
+/* Restablecer márgenes y rellenos predeterminados */
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Estilos de la navbar */
-.navbar {
-  background-color: #333;
+/* Estilo del menú de navegación */
+nav {
+  text-align: center;
+  background-color: #0e5f77;
   color: #fff;
-  padding: 10px 0;
 }
 
-.navbar h1 {
-  margin: 0;
-  font-size: 24px;
-}
-
-.navbar ul {
+nav ul {
   list-style: none;
-  padding: 0;
+  padding: 1rem;
 }
 
-.navbar ul li {
+nav li {
   display: inline;
-  margin-right: 20px;
+  margin: 0 1rem;
 }
 
-.navbar a {
+nav a {
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Estilos de la sección de héroe */
-body {
+/* Estilo de la landing */
+.landing {
+  background-image: url('/img/surf.jpg');
+  background-size: cover;
+  text-align: center;
+  padding: 150px 0;
   color: #fff;
+  font-family: 'Pacifico', cursive;
 }
 
-.hero {
-    background-image: url("surf1.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-  }
-  
-.hero h1 {
-  font-size: 300px;
-  margin-bottom: 20px;
+.landing h1 {
+  font-size: 2.5rem;
 }
 
-.hero h2 {
-  font-size: 100px;
+.boton-destacado {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de la sección de eventos */
+.eventos {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.eventos h2 {
+  font-family: 'Pacifico', cursive;
+  color: #0e5f77;
+}
+
+/* Estilo del footer */
+footer {
+  text-align: center;
+  background-color: #0e5f77;
+  color: #fff;
+  padding: 1rem 0;
+  font-family: 'Arial', sans-serif;
 }
