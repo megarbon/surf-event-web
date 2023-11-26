@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LANDING</title>
+		<!-- Include jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<!-- Include Typed.js -->
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('.text').typed({
+					strings: [
+						'TORNEOS DE SURF',
+						'CONCIERTOS',
+						'RECOGIDA DE BASURA',
+						'MEDIO AMBIENTE',
+					],
+					typeSpeed: 50,
+					backSpeed: 20,
+					backDelay: 2000,
+					showCursor: true,
+					loop: true,
+				});
+			});
+		</script>
+		<style>
+			#landing {
+				height: 100vh;
+				background: url(../img/costa.jpg) no-repeat center center fixed;
+				background-size: cover;
+			}
+
+			#portfolio {
+				background: url(../img/underwater.jpeg) no-repeat center center fixed;
+				background-size: cover;
+				min-height: 100vh;
+				position: relative;
+			}
+
+			.hero-text {
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 70px;
+			}
+
+			.text {
+				display: inline-block;
+				font-size: 1em;
+				font-weight: 300;
+				margin: 0;
+				line-height: 1;
+				color: #ffffff;
+				z-index: -1;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="landing">
+			<div class="hero-text">
+				<p class="text"></p>
+			</div>
+		</div>
+		<div id="portfolio">
+			<div id="port-wrapper">
+				<div class="text-2">
+					<button id="first" href="#text-changer-1"><h2>About me</h2></button>
+					<button id="second" href="#text-changer-2"><h2>Portfolio</h2></button>
+					<button id="third" href="#text-changer-3"><h2>Contacts</h2></button>
+					<div id="text-changer-1" class="content">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+					<div id="text-changer-2" class="content row">
+						<div>
+							Hola 1<br />
+							<div class="project"></div>
+						</div>
+					</div>
+					<div>
+						<p>Esto es solo un poco de texto de muestra</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
