@@ -4,6 +4,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Colors text</title>
 		<style>
+			@use postcss-preset-env {
+				stage: 0;
+			}
+
 			:root {
 				--color-background: #000119;
 				--stroke-width: calc(1em / 16);
@@ -27,22 +31,7 @@
 			}
 
 			h1 {
-				position: relative;
-				font-size: var(--font-size);
-				font-weight: var(--font-weight);
-				letter-spacing: var(--letter-spacing);
-				padding: calc(--stroke-width / 2);
-				color: transparent;
-			}
-
-			h1::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				z-index: -1;
+				background-clip: text;
 				background-image: linear-gradient(
 					to right,
 					#09f1b8,
@@ -50,9 +39,11 @@
 					#ff00d2,
 					#fed90f
 				);
-				-webkit-background-clip: text;
-				background-clip: text;
-				-webkit-text-fill-color: transparent;
+				color: var(--color-background);
+				font-size: var(--font-size);
+				font-weight: var(--font-weight);
+				letter-spacing: var(--letter-spacing);
+				padding: calc(--stroke-width / 2);
 				-webkit-text-stroke-color: transparent;
 				-webkit-text-stroke-width: var(--stroke-width);
 			}
