@@ -4,28 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>LANDING</title>
-		<!-- Include jQuery -->
-		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-		<!-- Include Typed.js -->
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-		<script>
-			$(document).ready(function () {
-				$('.text').typed({
-					strings: [
-						'TORNEOS DE SURF',
-						'CONCIERTOS',
-						'RECOGIDA DE BASURA',
-						'MEDIO AMBIENTE',
-					],
-					typeSpeed: 50,
-					backSpeed: 20,
-					backDelay: 2000,
-					showCursor: true,
-					loop: true,
-				});
-			});
-		</script>
 		<style>
 			#landing {
 				height: 100vh;
@@ -41,27 +20,21 @@
 			}
 
 			.hero-text {
-				position: relative;
-				top: 50%;
-				transform: translateY(-50%);
-				font-size: 70px;
-			}
-
-			.text {
-				display: inline-block;
-				font-size: 1em;
-				font-weight: 300;
-				margin: 0;
-				line-height: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 10em;
+				font-weight: 600;
+				line-height: 4;
 				color: #ffffff;
-				z-index: -1;
+				padding-bottom: 30%;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="landing">
 			<div class="hero-text">
-				<p class="text"></p>
+				<p>SURF CLEANERS</p>
 			</div>
 		</div>
 		<div id="portfolio">
