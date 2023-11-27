@@ -1,0 +1,109 @@
+/* Restablecer márgenes y rellenos predeterminados */
+body,
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilo del menú de navegación */
+nav {
+	text-align: center;
+	background-color: #0e5f77;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	padding: 1rem;
+}
+
+nav li {
+	display: inline;
+	margin: 0 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de la landing */
+.landing {
+	background-image: url('/img/surf.jpg');
+	background-size: cover;
+	text-align: center;
+	padding: 150px 0;
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+}
+
+.landing h1 {
+	font-size: 2.5rem;
+}
+
+.boton-destacado {
+	display: inline-block;
+	background-color: #ff6600;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de la sección de eventos */
+.eventos {
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.eventos h2 {
+	font-family: 'Pacifico', cursive;
+	color: #0e5f77;
+}
+
+/* Estilo del footer */
+footer {
+	text-align: center;
+	background-color: #0e5f77;
+	color: #fff;
+	padding: 1rem 0;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del banner */
+.banner-area {
+	background-image: url('tu-imagen-de-fondo.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 150px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.banner-content h5 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.banner-content h1 {
+	font-size: 3rem;
+}
+
+.primary-btn {
+	display: inline-block;
+	background-color: #ff6600;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
