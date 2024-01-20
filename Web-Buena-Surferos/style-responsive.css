@@ -1,0 +1,70 @@
+@media(max-width:1400px){
+	main.screen{
+		padding: 30px;
+	}
+}
+
+
+
+
+@media(max-width:1200px){
+	.container, .container.fw{
+		padding: 0 0;
+	}
+	main.screen{
+		padding: 25px;
+	}
+	header{padding:50px 0 30px 0;}
+	header.fixed{padding: 22px 0;}
+	header .container{padding: 0 50px;}
+	header.fixed .container{padding: 0 25px;}
+	a.logo img{width: 180px;}
+	.headermenu a.showmenu{
+		font-size: 30px;
+		color: #fff;
+	}
+	header.fixed .headermenu a.showmenu{
+		color: #000;
+	}
+	.navigation nav ul li{
+		float: none;
+		display: table;
+		margin: 0 auto 20px auto;
+		font-size: 16px;
+	}
+	.navigation nav ul li a{
+		display: table;
+		color: #fff !important;
+		padding: 7px 15px;
+	}
+	header.fixed .navigation nav ul li.active a, header.fixed .navigation nav ul li a:hover{
+		border: 1px solid #fff;
+	}
+}
+
+
+@media(max-width:640px){
+	.service_items .item{
+		flex-basis: 100%;
+		margin-bottom: 40px;
+	}
+	.service_items .item:last-of-type{
+		margin-bottom: 0;
+	}
+	.social{
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.social a{
+		font-size:17px;
+		margin-right: 13px;
+	}
+	.footerlinks{
+		float: left;
+		width: 100%;
+	}
+	.footerlinks a{
+		font-size: 17px;
+	}
+}
