@@ -1,62 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Normas del Concurso</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="noise"></div>
-    <div class="overlay"></div>
-    <div class="terminal">
-      <nav>
-        <div id="logo">Hacker Contest</div>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="normas.html">Normas</a></li>
-          <li><a href="premios.html">Premios</a></li>
-          <li><a href="#">Privado🔒</a></li>
-        </ul>
-      </nav>
-      <br />
-      <!-- Contenido de Normas -->
-      <section class="content">
-        <h2>Normas del Concurso</h2>
-        <ol>
-          <li>No se permite el uso de herramientas ilegales.</li>
-          <li>Respetar la privacidad de otros participantes.</li>
-          <li>
-            El incumplimiento de las normas resultará en la descalificación.
-          </li>
-          <!-- Agrega más normas según sea necesario -->
-        </ol>
-      </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Normas del Concurso</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			nav {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
 
-      <!-- Footer -->
-      <footer class="w3-container w3-padding-32 w3-center">
-        <a href="#home" class="w3-button w3-light-grey"
-          ><i class="fa fa-arrow-up"></i> Subir</a
-        >
-        <div class="w3-xlarge w3-section">
-          <i class="fa fa-facebook-official w3-hover-opacity"></i>
-          <i class="fa fa-instagram w3-hover-opacity"></i>
-          <i class="fa fa-snapchat w3-hover-opacity"></i>
-          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-          <i class="fa fa-twitter w3-hover-opacity"></i>
-          <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
-        <p>
-          Powered by
-          <a
-            href="https://github.com/megarbon"
-            title="W3.CSS"
-            target="_blank"
-            class="w3-hover-text-green"
-            >Melaku y Samu</a
-          >
-        </p>
-      </footer>
-    </div>
-  </body>
+			#logo {
+				font-size: 1.5em;
+				font-weight: bold;
+				color: #00ff41;
+				margin-bottom: 10px;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				display: flex; /* Cambio: Hacer que la lista sea un flex container */
+			}
+
+			li {
+				margin: 0 10px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #00ff41;
+				font-weight: bold;
+				transition: color 0.3s;
+				padding: 10px; /* Nueva regla: Añadir relleno para altura y anchura uniformes */
+				display: flex;
+			}
+
+			.centred-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			a:hover {
+				color: #e3e5e4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="noise"></div>
+		<div class="overlay"></div>
+		<div class="terminal">
+			<nav>
+				<div id="logo">Hacker Contest</div>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="normas.html">Normas</a></li>
+					<li><a href="premios.html">Premios</a></li>
+					<li><a href="#">Privado</a></li>
+				</ul>
+			</nav>
+			<br />
+			<!-- Contenido de Normas -->
+			<section class="content">
+				<h2>Normas del Concurso</h2>
+				<ol>
+					<li>No se permite el uso de herramientas ilegales.</li>
+					<li>Respetar la privacidad de otros participantes.</li>
+					<li>
+						El incumplimiento de las normas resultará en la descalificación.
+					</li>
+					<!-- Agrega más normas según sea necesario -->
+				</ol>
+			</section>
+
+			<p>
+				Powered by
+				<a
+					href="https://github.com/megarbon"
+					title="W3.CSS"
+					target="_blank"
+					class="w3-hover-text-green"
+					>Melaku y Samu</a
+				>
+			</p>
+		</div>
+	</body>
 </html>
