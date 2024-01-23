@@ -1,7 +1,29 @@
-/* CSS HEX */
---prussian-blue: #0e3755ff;
---moonstone: #60acb6ff;
---almond: #ebdecfff;
---hunyadi-yellow: #ffc164ff;
---fire-brick: #ba0025ff;
---snow: #fffafaff;
+/* Colores HEX */
+:root {
+    --color-prussian-blue: #0e3755ff;
+    --color-moonstone: #60acb6ff;
+    --color-almond: #ebdecfff;
+    --color-hunyadi-yellow: #ffc164ff;
+    --color-fire-brick: #ba0025ff;
+    --color-snow: #fffafaff;
+  }
+  
+  /* Fuentes */
+  :root {
+    --font-primary: 'TuFuentePrimaria', sans-serif;
+    --font-secondary: 'TuFuenteSecundaria', sans-serif;
+  }
+  
+  /* Ejemplo de uso en un selector */
+  body {
+    background-color: var(--color-snow);
+    color: var(--color-prussian-blue);
+    font-family: var(--font-primary);
+  }
+  
+  /* Otro ejemplo */
+  h1 {
+    color: var(--color-fire-brick);
+    font-family: var(--font-secondary);
+  }
+  
