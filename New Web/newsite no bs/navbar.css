@@ -468,7 +468,7 @@
     box-sizing: border-box;
     /* 12px - 24px */
     padding: clamp(0.75rem, 2vw, 1.5rem) 0;
-    background-color: rgba(255, 255, 255, 0.623);
+    background-color: rgba(255, 255, 255, 0.801);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     /* 12px - 24px */
     border-radius: clamp(0.75rem, 2vw, 1.5rem);
