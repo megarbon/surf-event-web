@@ -1,0 +1,261 @@
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-1333 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #contact-1333 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    /* 48px - 80px */
+    gap: clamp(3rem, 6vw, 5rem);
+    position: relative;
+  }
+  #contact-1333 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+
+  #contact-1333 .cs-title {
+    max-width: 23ch;
+    margin: 0 0 1.75rem 0;
+  }
+  #contact-1333 .cs-form {
+    width: 100%;
+    max-width: 40.625rem;
+    /* 32px - 48px top and bottom */
+    /* 16px - 60px left and right */
+    padding: clamp(2rem, 5.18vw, 3rem) clamp(1rem, 5vw, 3.75rem);
+    /* prevents flexbox from affecting height and width */
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    gap: 0.75rem;
+  }
+  #contact-1333 .cs-form .cs-title {
+    /* 16px - 28px */
+    margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+  }
+  #contact-1333 .cs-label {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    width: 100%;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  #contact-1333 .cs-input {
+    font-size: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0;
+    padding-left: 1.5rem;
+    color: var(--headerColor);
+    background-color: #fff;
+    border: none;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+  }
+  #contact-1333 .cs-input::placeholder {
+    color: #767676;
+    opacity: 0.6;
+  }
+  #contact-1333 .cs-textarea {
+    min-height: 7.5rem;
+    padding-top: 1.5rem;
+    /* 16px - 28px */
+    margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+    font-family: inherit;
+  }
+  #contact-1333 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #1a1a1a;
+    border: none;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s;
+  }
+  #contact-1333 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #contact-1333 .cs-button-solid:hover {
+    color: #fff;
+  }
+  #contact-1333 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #contact-1333 .cs-submit {
+    width: 100%;
+    min-width: 17.6875rem;
+  }
+  #contact-1333 .cs-submit:hover {
+    cursor: pointer;
+  }
+  #contact-1333 .cs-faq-group {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contact-1333 .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    transition: border-bottom 0.3s;
+  }
+  #contact-1333 .cs-faq-item.active {
+    border-color: var(--primary);
+  }
+  #contact-1333 .cs-faq-item.active .cs-button {
+    color: var(--primary);
+  }
+  #contact-1333 .cs-faq-item.active .cs-button:before {
+    background-color: var(--primary);
+    transform: rotate(315deg);
+  }
+  #contact-1333 .cs-faq-item.active .cs-button:after {
+    background-color: var(--primary);
+    transform: rotate(-315deg);
+  }
+  #contact-1333 .cs-faq-item.active .cs-item-p {
+    height: auto;
+    /* 20px - 24px bottom */
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 2vw, 1.5rem) 0;
+    opacity: 1;
+  }
+  #contact-1333 .cs-button {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    /* 16px - 24px */
+    padding: clamp(1rem, 2vw, 1.5rem);
+    padding-left: 0;
+    border: none;
+    background: transparent;
+    color: var(--headerColor);
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #contact-1333 .cs-button:hover {
+    cursor: pointer;
+  }
+  #contact-1333 .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--headerColor);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.5rem;
+    transform: rotate(45deg);
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+    transition: transform 0.5s;
+  }
+  #contact-1333 .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--headerColor);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.3125rem;
+    transform: rotate(-45deg);
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+    transition: transform 0.5s;
+  }
+  #contact-1333 .cs-button-text {
+    width: 80%;
+    display: block;
+  }
+  #contact-1333 .cs-item-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 90%;
+    height: 0;
+    margin: 0;
+    /* 16px - 24px */
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+    opacity: 0;
+    color: var(--bodyTextColor);
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact-1333 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #contact-1333 .cs-form {
+    width: 45vw;
+  }
+  #contact-1333 .cs-submit {
+    width: auto;
+  }
+}
