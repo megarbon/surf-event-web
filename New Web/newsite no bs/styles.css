@@ -9,18 +9,22 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color: #ffffff;
-  --primary-color: #f8cb2e;
-  --secondary-color: #ee5007;
-  --section-bg-color: #f0f8ff;
-  --custom-btn-bg-color: #ee5007;
-  --custom-btn-bg-hover-color: #c01f27;
-  --dark-color: #000000;
-  --p-color: #717275;
-  --border-color: #7fffd4;
-  --link-hover-color: #b22727;
+  --primary: #0e3755ff; /* Prussian Blue */
+  --primaryLight: #60acb6ff; /* Moonstone */
+  --secondary: #ebdecfff; /* Almond */
+  --secondaryLight: #ffc164ff; /* Hunyadi Yellow */
+  --headerColor: #ba0025ff; /* Fire Brick */
+  --bodyTextColor: #4e4b66; /* Body Text Color */
+  --bodyTextColorWhite: #fafbfc; /* Body Text Color White */
 
-  --body-font-family: "Outfit", sans-serif;
+  /* 13px - 16px */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  /* 31px - 49px */
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  /* 60px - 100px top and bottom */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+
 
   --h1-font-size: 74px;
   --h2-font-size: 46px;
@@ -39,24 +43,77 @@
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
+
+  --body-font-family: 'Geist', sans-serif;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: var(--white-color);
   font-family: var(--body-font-family);
 }
+
+*, *:before, *:after {
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+}
+
 
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--dark-color);
+
+.cs-topper {
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: inherit;
+  letter-spacing: .1em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  display: block;
 }
+
+.cs-title {
+  font-size: var(--headerFontSize);
+  font-family: 'Geist', sans-serif;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-align: inherit;
+  max-width: 43.75rem;
+  margin: 0 0 1rem 0;
+  color: var(--headerColor);
+  position: relative;
+}
+
+
+.cs-text {
+  font-size: var(--bodyFontSize);
+  line-height: 1.5em;
+  text-align: inherit;
+  width: 100%;
+  max-width: 40.625rem;
+  margin: 0;
+  color: var(--bodyTextColor);
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('../fonts/GeistMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('../fonts/GeistMono-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 
 /* Estilos del Navbar */
 .navbar {
@@ -88,7 +145,7 @@ h6 {
 }
 
 .menu li a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
