@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página con Video de Fondo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1>Logo</h1>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <video autoplay muted loop id="video-background">
+        <source src="../video/surf-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="cta">
+        <h2>¡Compra tus entradas ya!</h2>
+        <button>Comprar</button>
+      </div>
+
+      <div class="info-section">
+        <div class="info-container">
+          <div class="date-wrap">
+            <h5 class="text-white">
+              <i class="custom-icon bi-clock me-2"></i>
+              08 - 10, Agosto 2024
+            </h5>
+          </div>
+
+          <div class="location-wrap">
+            <h5 class="text-white">
+              <i class="custom-icon bi-geo-alt me-2"></i>
+              Playa de la Concha, San Sebastián, España
+            </h5>
+          </div>
+
+          <div class="social-share">
+            <ul class="social-icons">
+              <li>
+                <a href="#"><span class="bi-facebook"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="bi-instagram"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-content">
+        <h2>Acerca de Nosotros</h2>
+        <p>
+          Somos una empresa dedicada a proporcionar soluciones innovadoras en la
+          industria del surf. Desde 2005, hemos estado comprometidos con la
+          promoción del surf sostenible y el cuidado del medio ambiente marino.
+        </p>
+        <p>
+          Nuestro equipo está formado por surfistas apasionados y profesionales
+          altamente calificados que trabajan juntos para ofrecer experiencias
+          únicas a nuestros clientes.
+        </p>
+        <p>
+          En EcoSurf, creemos en la importancia de preservar y proteger nuestros
+          océanos. Por eso, nos esforzamos por utilizar materiales ecológicos en
+          nuestros productos y promover prácticas de surf responsables.
+        </p>
+      </div>
+      <img
+        src="images/about-image.jpg"
+        class="about-image"
+        alt="Imagen Acerca de Nosotros"
+      />
+    </section>
+
+    <section class="artists-section">
+      <div class="container">
+        <h2 class="mb-4">Meet Artists</h2>
+        <div class="artists-container">
+          <div class="artist">
+            <img
+              src="images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg"
+              alt="Madona"
+            />
+            <div class="artist-info">
+              <p><strong>Name:</strong> Madona</p>
+              <p><strong>Birthdate:</strong> August 16, 1958</p>
+              <p><strong>Music:</strong> Pop, R&amp;B</p>
+              <hr />
+              <p>
+                <strong>Youtube Channel:</strong>
+                <a href="#">Madona Official</a>
+              </p>
+            </div>
+          </div>
+          <div class="artist">
+            <img
+              src="images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg"
+              alt="Rihana"
+            />
+            <div class="artist-info">
+              <p><strong>Name:</strong> Rihana</p>
+              <p><strong>Birthdate:</strong> Feb 20, 1988</p>
+              <p><strong>Music:</strong> Country</p>
+              <hr />
+              <p>
+                <strong>Youtube Channel:</strong>
+                <a href="#">Rihana Official</a>
+              </p>
+            </div>
+          </div>
+          <div class="artist">
+            <img
+              src="images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg"
+              alt="Bruno Bros"
+            />
+            <div class="artist-info">
+              <p><strong>Name:</strong> Bruno Bros</p>
+              <p><strong>Birthdate:</strong> October 8, 1985</p>
+              <p><strong>Music:</strong> Pop</p>
+              <hr />
+              <p>
+                <strong>Youtube Channel:</strong> <a href="#">Bruno Official</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="schedule-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="text-white mb-4">Horario de Eventos</h2>
+
+            <div class="table-responsive">
+              <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Miércoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Día 1</th>
+                    <td
+                      class="table-background-image-wrap pop-background-image"
+                    >
+                      <div class="section-overlay">
+                        <h3>Pop Night</h3>
+                        <p>5:00 - 7:00 PM</p>
+                        <p>Por Adele</p>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td
+                      class="table-background-image-wrap rock-background-image"
+                    >
+                      <div class="section-overlay">
+                        <h3>Rock & Roll</h3>
+                        <p>7:00 - 11:00 PM</p>
+                        <p>Por Rihana</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Día 2</th>
+                    <td></td>
+                    <td class="table-background-image-wrap dj-background-image">
+                      <div class="section-overlay">
+                        <h3>DJ Night</h3>
+                        <p>6:30 - 9:30 PM</p>
+                        <p>Por Rihana</p>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Día 3</th>
+                    <td
+                      class="table-background-image-wrap country-background-image"
+                    >
+                      <div class="section-overlay">
+                        <h3>Country Music</h3>
+                        <p>4:30 - 7:30 PM</p>
+                        <p>Por Rihana</p>
+                      </div>
+                    </td>
+                    <td></td>
+                    <td class="free-styles-background-image">
+                      <div class="section-overlay">
+                        <h3>Free Styles</h3>
+                        <p>6:00 - 10:00 PM</p>
+                        <p>Por Miembros</p>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section section-bg">
+      <div class="container">
+        <h2 class="text-center mb-4">Planes, te encantarán</h2>
+        <div class="pricing-container">
+          <div class="pricing-card">
+            <h3><small>Early Bird</small> $120</h3>
+            <p>Incluye buenas cosas:</p>
+            <ul>
+              <li>Plataforma para clientes potenciales</li>
+              <li>Experiencia digital</li>
+              <li>Sonido de alta calidad</li>
+              <li>Contenido estándar</li>
+            </ul>
+            <p class="pricing-tag">Ahorra hasta <span>50%</span></p>
+            <a href="ticket.html">Comprar Entrada</a>
+          </div>
+          <div class="pricing-card">
+            <h3><small>Estándar</small> $240</h3>
+            <p>¿Qué hace que un festival sea premium?</p>
+            <ul>
+              <li>Plataforma para clientes potenciales</li>
+              <li>Experiencia digital</li>
+              <li>Sonido de alta calidad</li>
+              <li>Contenido premium</li>
+              <li>Soporte de chat en vivo</li>
+            </ul>
+            <a href="ticket.html">Comprar Entrada</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-padding">
+      <div class="contact-container">
+        <h2 class="text-center mb-4">¿Interesado? Hablemos</h2>
+        <nav class="nav-tabs">
+          <button
+            id="nav-ContactForm-tab"
+            class="active"
+            onclick="openTab('nav-ContactForm')"
+          >
+            Contacto
+          </button>
+          <button id="nav-ContactMap-tab" onclick="openTab('nav-ContactMap')">
+            Google Maps
+          </button>
+        </nav>
+        <div class="tab-content">
+          <div class="tab-pane active" id="nav-ContactForm">
+            <form
+              class="custom-form contact-form"
+              action="#"
+              method="post"
+              role="form"
+            >
+              <input
+                type="text"
+                name="contact-name"
+                id="contact-name"
+                class="form-control"
+                placeholder="Nombre completo"
+                required
+              />
+              <input
+                type="email"
+                name="contact-email"
+                id="contact-email"
+                class="form-control"
+                placeholder="Correo electrónico"
+                required
+              />
+              <input
+                type="text"
+                name="contact-company"
+                id="contact-company"
+                class="form-control"
+                placeholder="Compañía"
+                required
+              />
+              <textarea
+                name="contact-message"
+                rows="3"
+                class="form-control"
+                id="contact-message"
+                placeholder="Mensaje"
+              ></textarea>
+              <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+          </div>
+          <div class="tab-pane" id="nav-ContactMap">
+            <iframe
+              class="google-map"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Beach%20of%20La%20Concha+(Beach%20of%20La%20Concha)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="site-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h2>Festava Live</h2>
+            </div>
+            <div
+              class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center"
+            >
+              <ul class="social-icon">
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span>Apple</span>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span>Instagram</span>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span>Youtube</span>
+                  </a>
+                </li>
+                <li class="social-icon-item">
+                  <a href="#" class="social-icon-link">
+                    <span>Pinterest</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 mb-4 pb-2">
+            <h5 class="site-footer-title">Links</h5>
+            <ul class="site-footer-links">
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Home</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">About</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Artists</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Schedule</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Pricing</a>
+              </li>
+              <li class="site-footer-link-item">
+                <a href="#" class="site-footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+            <h5 class="site-footer-title">Have a question?</h5>
+            <p class="site-footer-link">
+              <a href="tel:090-080-0760">090-080-0760</a>
+            </p>
+            <p class="site-footer-link">
+              <a href="mailto:hello@company.com">hello@company.com</a>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+            <h5 class="site-footer-title">Location</h5>
+            <p class="site-footer-link">
+              Silang Junction South, Tagaytay, Cavite, Philippines
+            </p>
+            <a class="site-footer-link" href="#">
+              Our Maps
+              <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="16" cy="16" r="15.5"></circle>
+                  <line x1="10" y1="18" x2="16" y2="12"></line>
+                  <line x1="16" y1="12" x2="22" y2="18"></line>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-12 mt-3">
+              <p class="copyright-text">
+                Copyright © 2036 Festava Live Company
+              </p>
+            </div>
+            <div class="col-lg-8 col-12 mt-3">
+              <ul class="site-footer-links">
+                <li class="site-footer-link-item">
+                  <a href="#" class="site-footer-link">Terms & Conditions</a>
+                </li>
+                <li class="site-footer-link-item">
+                  <a href="#" class="site-footer-link">Privacy Policy</a>
+                </li>
+                <li class="site-footer-link-item">
+                  <a href="#" class="site-footer-link">Your Feedback</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function openTab(tabId) {
+        var tabs = document.querySelectorAll(".tab-pane");
+        tabs.forEach(function (tab) {
+          if (tab.id === tabId) {
+            tab.classList.add("active");
+          } else {
+            tab.classList.remove("active");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
