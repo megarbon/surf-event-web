@@ -9,11 +9,11 @@
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --primary: #0e3755ff; /* Prussian Blue */
+  --primary: #ba0025ff; /* Fire Brick */
   --primaryLight: #60acb6ff; /* Moonstone */
   --secondary: #ebdecfff; /* Almond */
   --secondaryLight: #ffc164ff; /* Hunyadi Yellow */
-  --headerColor: #ba0025ff; /* Fire Brick */
+  --headerColor: #0e3755ff; /* Prussian Blue */
   --bodyTextColor: #4e4b66; /* Body Text Color */
   --bodyTextColorWhite: #fafbfc; /* Body Text Color White */
 
