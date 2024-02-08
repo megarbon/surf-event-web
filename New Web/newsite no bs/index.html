@@ -24,7 +24,7 @@
         <!--Logo is turned white in the css with a filter on dark mode-->
         <a href="" class="cs-logo" aria-label="back to home">
           <img
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care.svg"
+            src="../images/logos/eco-surf-logo-b-2.png"
             alt="logo"
             width="210"
             height="29"
@@ -84,18 +84,6 @@
           </div>
         </nav>
         <div class="cs-contact-group">
-          <a href="tel:+84 1985 33 999" class="cs-phone">
-            <img
-              class="cs-phone-icon"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg"
-              alt="logo"
-              width="24"
-              height="24"
-              aria-hidden="true"
-              decoding="async"
-            />
-            +84 1985 33 999
-          </a>
           <div class="cs-social">
             <a href="" class="cs-social-link">
               <img
@@ -152,13 +140,15 @@
     </header>
 
     <section class="hero">
-      <video autoplay muted loop id="video-background">
-        <source src="../video/surf-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div id="video-wrapper">
+        <video autoplay muted loop id="video-background">
+          <source src="../video/surf-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="cta">
         <h2>¡Compra tus entradas ya!</h2>
-        <button>Comprar</button>
+        <button class="cs-button-6">Comprar</button>
       </div>
 
       <div class="info-section">
@@ -206,21 +196,19 @@
             <!--Mobile Image-->
             <source
               media="(max-width: 600px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/child6.jpg
+              src="
+                ../images/stock/surfers2.jpg
               "
             />
             <!--Tablet and above Image-->
             <source
               media="(min-width: 601px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/child6.jpg
-              "
+              srcset="../images/stock/surfer1.jpg"
             />
             <img
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/child6.jpg"
+              src="../images/stock/surfers2.jpg"
               alt="kid"
               width="647"
               height="600"
@@ -231,21 +219,17 @@
             <!--Mobile Image-->
             <source
               media="(max-width: 600px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/kids5.jpg
-              "
+              srcset="../images/stock/surfers2.jpg"
             />
             <!--Tablet and above Image-->
             <source
               media="(min-width: 601px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/kids5.jpg
-              "
+              srcset="../images/stock/surfers2.jpg"
             />
             <img
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/kids5.jpg"
+              src="../images/stock/surfers2.jpg"
               alt="kid"
               width="320"
               height="320"
@@ -299,14 +283,18 @@
           </svg>
         </div>
         <div class="cs-content">
-          <span class="cs-topper">About Stitch Day Care</span>
-          <h2 class="cs-title">We’re Passionate About Early Education</h2>
+          <span class="cs-topper">¿Qué es EcoSurf?</span>
+          <h2 class="cs-title">
+            Un Evento de Surf, Conciertos y Limpieza de Playas
+          </h2>
           <p class="cs-text">
-            Stitch day care is a place where you can keep your baby with peace
-            in your mind when you are working in your office for the better
-            future of your child. We promise to take care of your child’s
-            social, emotional, intellectual and physical needs with sensitive
-            care and we also ensure you their security with our life.
+            EcoSurf es un evento único que combina la pasión por el surf, la
+            música y el cuidado del medio ambiente. Organizado en hermosas
+            playas, EcoSurf ofrece la oportunidad de disfrutar de emocionantes
+            actividades acuáticas, vibrantes conciertos y contribuir a la
+            limpieza y conservación de nuestras costas. Únete a nosotros para un
+            día lleno de diversión, comunidad y compromiso con la protección de
+            nuestro entorno marino.
           </p>
           <ul class="cs-ul">
             <li class="cs-li">
@@ -323,10 +311,11 @@
                 />
               </picture>
               <div class="cs-flex">
-                <h3 class="cs-h3">Our Mission</h3>
+                <h3 class="cs-h3">Nuestra Misión</h3>
                 <p class="cs-li-text">
-                  It’s no secret that one person alone cannot overcome the
-                  greatest humanitarian crises. It truly takes all of us.
+                  Nuestra misión es inspirar y movilizar a la comunidad para
+                  limpiar nuestras playas, proteger nuestros océanos y promover
+                  la conciencia ambiental a través del surf y la música.
                 </p>
               </div>
             </li>
@@ -344,15 +333,17 @@
                 />
               </picture>
               <div class="cs-flex">
-                <h3 class="cs-h3">Our Vision</h3>
+                <h3 class="cs-h3">Nuestra Visión</h3>
                 <p class="cs-li-text">
-                  It’s no secret that one person alone cannot overcome the
-                  greatest humanitarian crises. It truly takes all of us.
+                  Nuestra visión es crear un mundo donde las playas estén
+                  limpias, los océanos estén protegidos y la comunidad esté
+                  unida en el cuidado del medio ambiente, disfrutando del surf y
+                  la música.
                 </p>
               </div>
             </li>
           </ul>
-          <a href="" class="cs-button-solid">Learn More</a>
+          <a href="" class="cs-button-solid">Aprender Más</a>
         </div>
       </div>
       <!--Top Zig Zag-->
@@ -396,21 +387,17 @@
             <!--Mobile Image-->
             <source
               media="(max-width: 600px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-standing.jpeg
-              "
+              srcset="../images/stock/surfers2.jpg"
             />
             <!--Tablet and above Image-->
             <source
               media="(min-width: 601px)"
-              srcset="
-                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-standing.jpeg
-              "
+              srcset="../images/stock/surfers2.jpg"
             />
             <img
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/people-standing.jpeg"
+              src="../images/stock/surfers2.jpg"
               alt="people standing"
               width="605"
               height="690"
@@ -419,14 +406,15 @@
         </div>
         <div class="cs-content">
           <span class="cs-topper">Actividades</span>
-          <h2 class="cs-title">No vas a tener tiempo para aburrirte</h2>
+          <h2 class="cs-title">¡Sumérgete en un día lleno de emociones!</h2>
           <p class="cs-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-            accusantium fuga dolore nulla provident inventore possimus,
-            incidunt, tenetur voluptate laudantium consequuntur commodi. In
-            perferendis quod, non ad veniam similique assumenda deleniti nobis
-            quaerat ipsum cum! Velit provident eligendi cumque excepturi!
+            Comenzaremos la jornada con una inspiradora sesión de limpieza de
+            playas, donde uniremos fuerzas para preservar y proteger nuestro
+            preciado entorno marino. Después, será momento de lanzarnos a las
+            olas con nuestras tablas de surf y disfrutar de la adrenalina y la
+            conexión con la naturaleza que nos brinda el océano.
           </p>
+
           <ul class="cs-faq-group">
             <li class="cs-faq-item active">
               <button class="cs-button">
@@ -664,7 +652,7 @@
         <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
         <img
           class="cs-logo"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo1.png"
+          src="../images/logos/Billabong-logo.png"
           alt="logo"
           width="287"
           height="65"
@@ -673,7 +661,7 @@
         />
         <img
           class="cs-logo"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo2.png"
+          src="../images/logos/Oakley_logo.svg.png"
           alt="logo"
           width="229"
           height="55"
@@ -682,7 +670,7 @@
         />
         <img
           class="cs-logo"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo3.png"
+          src="../images/logos/redbull-logo.png"
           alt="logo"
           width="235"
           height="53"
@@ -691,7 +679,7 @@
         />
         <img
           class="cs-logo"
-          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/logo4.png"
+          src="../images/logos/quicksilver-logo.png"
           alt="logo"
           width="228"
           height="61"
@@ -708,14 +696,14 @@
     <section id="pricing-1518">
       <div class="cs-container">
         <div class="cs-content">
-          <span class="cs-topper">Our Pricing</span>
-          <h2 class="cs-title">Select a Plan According to Your Requirements</h2>
+          <span class="cs-topper">Precios</span>
+          <h2 class="cs-title">Escoge tu entrada para el evento del año!</h2>
         </div>
         <ul class="cs-card-group">
           <li class="cs-item">
             <div class="cs-flex">
-              <span class="cs-desc">Toddler</span>
-              <h3 class="cs-h3">1-8 Years</h3>
+              <span class="cs-desc">Voluntario</span>
+              <h3 class="cs-h3">Todo Gratis!</h3>
               <svg
                 class="cs-mask"
                 id="Layer_2-1518"
@@ -825,7 +813,7 @@
               </ul>
               <div class="cs-info">
                 <span class="cs-price">
-                  $175 <span class="cs-duration">/mo</span>
+                  0€<span class="cs-duration">/día</span>
                 </span>
                 <a href="" class="cs-button-solid">Buy Now</a>
               </div>
@@ -1153,8 +1141,8 @@
           method="post"
         >
           <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Make Appointment</h2>
+            <span class="cs-topper">Contáctanos</span>
+            <h2 class="cs-title">Cualquier Duda</h2>
           </div>
           <label class="cs-label">
             Name
@@ -1204,8 +1192,8 @@
           </button>
         </form>
         <div class="cs-content">
-          <span class="cs-topper">Asked Questions</span>
-          <h2 class="cs-title">Frequently Asked Questions</h2>
+          <span class="cs-topper">Tal vez esté aqí la respuesta</span>
+          <h2 class="cs-title">Preguntas Comunes</h2>
           <ul class="cs-faq-group">
             <!-- Active class added as default -->
             <li class="cs-faq-item active">
@@ -1295,7 +1283,7 @@
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="https://csimg.nyc3.digitaloceanspaces.com/Footer/logo.svg"
+              src="../images/logos/eco-surf-logo-b-2.png"
               alt="logo"
               width="240"
               height="32"
@@ -1315,7 +1303,7 @@
               width="24"
               height="24"
             />
-            hi@stitchconstruction.com
+            hi@ecosurf.com
           </a>
         </div>
         <!-- Links -->
@@ -1381,8 +1369,8 @@
       </div>
       <div class="cs-bottom">
         <span class="cs-copyright"
-          >Copyright© 2023.
-          <a class="cs-copyright-link" href="">Stitch Construction.</a>
+          >Copyright© 2024.
+          <a class="cs-copyright-link" href="">Ecosurf.</a>
           All Right Reserved.
         </span>
         <a href="" class="cs-copyright-link">Terms of Service</a>
