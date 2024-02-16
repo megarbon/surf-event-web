@@ -38,7 +38,6 @@ header .logo {
     align-items: center;
     background: #111;
     transition: 0.5s;
-    z-index: 2;
   }
 
   .showcase.active {
@@ -52,7 +51,6 @@ header .logo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
   }
 
   .overlay {
@@ -61,7 +59,7 @@ header .logo {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #334c587e;
+    background: #3354587e;
     mix-blend-mode: overlay;
   }
 
@@ -160,6 +158,7 @@ header .logo {
 
   .cards {
     display: flex;
+    flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
     margin: 0;
