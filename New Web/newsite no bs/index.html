@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="whyUsSection.css" />
     <link rel="stylesheet" href="logo-slider.css" />
     <link rel="stylesheet" href="speakers.css" />
+    <link rel="stylesheet" href="cookies.css" />
+    <link rel="stylesheet" href="cta.css" />
   </head>
   <body>
     <!-- ============================================ -->
@@ -51,36 +53,20 @@
                 <a href="" class="cs-li-link cs-active"> Home </a>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> About </a>
+                <a href="#why-choose-1485" class="cs-li-link"> About </a>
               </li>
               <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
               <li class="cs-li cs-dropdown" tabindex="0">
-                <span class="cs-li-link">
-                  Services
-                  <img
-                    class="cs-drop-icon"
-                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg"
-                    alt="dropdown icon"
-                    width="15"
-                    height="15"
-                    decoding="async"
-                    aria-hidden="true"
-                  />
-                </span>
-                <ul class="cs-drop-ul">
-                  <li class="cs-drop-li">
-                    <a href="" class="cs-li-link cs-drop-link">Registration</a>
-                  </li>
-                  <li class="cs-drop-li">
-                    <a href="" class="cs-li-link cs-drop-link">Our Classes</a>
-                  </li>
-                </ul>
+                <span class="cs-li-link"> Actividades </span>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> Blog </a>
+                <a href="" class="cs-li-link"> Ponentes </a>
               </li>
               <li class="cs-li">
-                <a href="" class="cs-li-link"> Contact </a>
+                <a href="" class="cs-li-link"> Entradas </a>
+              </li>
+              <li class="cs-li">
+                <a href="" class="cs-li-link"> Contacto </a>
               </li>
             </ul>
           </div>
@@ -141,16 +127,30 @@
       </div>
     </header>
 
+    <section class="cookies-section">
+      <div class="cookies-card">
+        <p class="title">Cookies</p>
+        <p class="info">
+          Al usar esta página web aceptas el uso de cookies para fines de
+          rastreo.
+          <a href="#">Leer Más</a>
+        </p>
+        <button class="cta-cookies" onclick="disapearSection()">
+          Aceptar Todo
+        </button>
+      </div>
+    </section>
+
     <section class="hero">
+      <div class="content">
+        <h1>EcoSurf</h1>
+        <a href="#">COMPRAR</a>
+      </div>
       <div id="video-wrapper">
         <video autoplay muted loop id="video-background">
           <source src="../video/surf-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-      </div>
-      <div class="cta">
-        <h2>¡Compra tus entradas ya!</h2>
-        <button class="cs-button-6">Comprar</button>
       </div>
 
       <div class="info-section">
@@ -515,59 +515,145 @@
     <!-- ============================================ -->
     <!--                   Speakers Section              -->
     <!-- ============================================ -->
-    <section class="artists-section">
-      <div class="card">
-        <div class="card-content">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Person"
-            class="card-image"
-          />
-          <div class="overlay">
-            <h3 class="card-title">Título del Texto</h3>
-            <p class="card-description">Descripción de la tarjeta.</p>
+    <section class="speakers-section" id="section_3">
+      <div class="container">
+        <div class="item-container">
+          <div class="img-container">
+            <img src="./images/img1.jpg" alt="Event image" />
+          </div>
+
+          <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+              <p class="title">Bubbe's Book Club</p>
+              <div class="separator"></div>
+              <p class="info">Bellmore, NY</p>
+              <p class="price">Free</p>
+
+              <div class="additional-info">
+                <p class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  Grand Central Terminal
+                </p>
+                <p class="info">
+                  <i class="far fa-calendar-alt"></i>
+                  Sat, Sep 19, 10:00 AM EDT
+                </p>
+
+                <p class="info description">
+                  Welcome! Everyone has a unique perspective after reading a
+                  book, and we would love you to share yours with us! We meet
+                  one Sunday evening <span>more...</span>
+                </p>
+              </div>
+            </div>
+            <button class="action">Book it</button>
           </div>
         </div>
-      </div>
-      <!-- Una persona nueva-->
-      <div class="card">
-        <div class="card-content">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Person"
-            class="card-image"
-          />
-          <div class="overlay">
-            <h3 class="card-title">Título del Texto</h3>
-            <p class="card-description">Descripción de la tarjeta.</p>
+
+        <div class="item-container">
+          <div class="img-container">
+            <img src="./images/img2.jpg" alt="Event image" />
+          </div>
+
+          <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+              <p class="title">The Overstory</p>
+              <div class="separator"></div>
+              <p class="info">New York, NY</p>
+              <p class="price">29$</p>
+
+              <div class="additional-info">
+                <p class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  245 W 52nd St, New York
+                </p>
+                <p class="info">
+                  <i class="far fa-calendar-alt"></i>
+                  Sat, Sep 19, 10:00 AM EDT
+                </p>
+
+                <p class="info description">
+                  Welcome! Everyone has a unique perspective after reading a
+                  book, and we would love you to share yours with us! We meet
+                  one Sunday evening <span>more...</span>
+                </p>
+              </div>
+            </div>
+            <button class="action">Book it</button>
           </div>
         </div>
-      </div>
-      <!-- Una persona nueva-->
-      <div class="card">
-        <div class="card-content">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Person"
-            class="card-image"
-          />
-          <div class="overlay">
-            <h3 class="card-title">Título del Texto</h3>
-            <p class="card-description">Descripción de la tarjeta.</p>
+
+        <div class="item-container">
+          <div class="img-container">
+            <img src="./images/img3.jpg" alt="Event image" />
+          </div>
+
+          <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+              <p class="title">The NY Festival</p>
+              <div class="separator"></div>
+              <p class="info">New York, NY</p>
+              <p class="price">70$</p>
+
+              <div class="additional-info">
+                <p class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  245 W 52nd St, New York
+                </p>
+                <p class="info">
+                  <i class="far fa-calendar-alt"></i>
+                  Sat, Sep 19, 10:00 AM EDT
+                </p>
+
+                <p class="info description">
+                  Welcome! Everyone has a unique perspective after reading a
+                  book, and we would love you to share yours with us! We meet
+                  one Sunday evening <span>more...</span>
+                </p>
+              </div>
+            </div>
+            <button class="action">Book it</button>
           </div>
         </div>
-      </div>
-      <!-- Una persona nueva-->
-      <div class="card">
-        <div class="card-content">
-          <img
-            src="https://via.placeholder.com/150"
-            alt="Person"
-            class="card-image"
-          />
-          <div class="overlay">
-            <h3 class="card-title">Título del Texto</h3>
-            <p class="card-description">Descripción de la tarjeta.</p>
+
+        <div class="item-container">
+          <div class="img-container">
+            <img src="./images/img4.jpg" alt="Event image" />
+          </div>
+
+          <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+              <p class="title">Tech Bubble Conf</p>
+              <div class="separator"></div>
+              <p class="info">New York, NY</p>
+              <p class="price">35$</p>
+
+              <div class="additional-info">
+                <p class="info">
+                  <i class="fas fa-map-marker-alt"></i>
+                  245 W 52nd St, New York
+                </p>
+                <p class="info">
+                  <i class="far fa-calendar-alt"></i>
+                  Sat, Sep 19, 10:00 AM EDT
+                </p>
+
+                <p class="info description">
+                  Welcome! Everyone has a unique perspective after reading a
+                  book, and we would love you to share yours with us! We meet
+                  one Sunday evening <span>more...</span>
+                </p>
+              </div>
+            </div>
+            <button class="action">Book it</button>
           </div>
         </div>
       </div>
@@ -1385,6 +1471,10 @@
         };
         item.addEventListener("click", onClick);
       }
+      const disapearSection = () => {
+        const section = document.querySelector(".cookies-section");
+        section.style.display = "none";
+      };
     </script>
   </body>
 </html>
