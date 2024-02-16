@@ -11,7 +11,7 @@ header {
   left: 0;
   width: 100%;
   padding: 40px 100px;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,6 +55,14 @@ header {
   .text {
     position: relative;
     z-index: 10;
+
+    h2{
+      font-size: 5em;
+      font-weight: 800;
+      color: #fff;
+      line-height: 2.5em;
+      text-transform: uppercase;
+    }
   }
 
   .text h2 {
@@ -116,6 +124,11 @@ header {
     position: fixed;
     top: 60px;
     left: 60px;
+
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
   }
   .navbar {
     position: fixed;
@@ -125,7 +138,6 @@ header {
     height: 100%;
     padding: 40px;
     transition: 0.5s;
-    z-index: 1000;
 
     color: #fff;
   }
