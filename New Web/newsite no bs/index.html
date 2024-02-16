@@ -119,11 +119,6 @@
             </a>
           </div>
         </div>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
-          <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-          <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
-      </button> -->
       </div>
     </header>
 
@@ -142,10 +137,15 @@
     </section>
 
     <section class="hero">
+      <!--Reloj cuenta atras-->
+      <div class="countdown">
+        <h1 id="timer">00:00:00</h1>
+      </div>
       <div class="content">
         <h1>EcoSurf</h1>
         <a href="#">COMPRAR</a>
       </div>
+
       <div id="video-wrapper">
         <video autoplay muted loop id="video-background">
           <source src="../video/surf-video.mp4" type="video/mp4" />
@@ -1475,6 +1475,40 @@
         const section = document.querySelector(".cookies-section");
         section.style.display = "none";
       };
+
+      // script para la cuenta regresiva
+      document.addEventListener("DOMContentLoaded", function () {
+        const timerDisplay = document.getElementById("timer");
+
+        function countdown() {
+          const now = new Date().getTime();
+          const targetDate = new Date("2024-05-31T23:59:59").getTime();
+          const distance = targetDate - now;
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          timerDisplay.textContent = `${days
+            .toString()
+            .padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${minutes
+            .toString()
+            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+
+          if (distance <= 0) {
+            clearInterval(interval);
+            timerDisplay.textContent = "EXPIRED";
+          }
+        }
+
+        countdown();
+        const interval = setInterval(countdown, 1000);
+      });
     </script>
   </body>
 </html>
