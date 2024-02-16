@@ -2,6 +2,160 @@
 <---          Footer            -->
 <--- -------------------------- -*/
 
+#footer {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  background: linear-gradient(to bottom, #3586ff, #0e3755ff);
+  min-height: 100px;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul {
+    list-style: none;
+  }
+  .footer-col {
+    width: 25%;
+    padding: 20px 15px;
+  }
+  .footer-col h4 {
+    font-size: 16px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    background-color: #0e3755ff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ebdecfff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover {
+    color: #ebdecfff;
+    padding-left: 4px;
+  }
+
+  /*  iconos  */
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    padding: 11px 0;
+    border-radius: 50%;
+    color: #ebdecfff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+    padding-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    .footer-col {
+      width: 50%;
+    }
+  }
+  @media (max-width: 574px) {
+    .footer-col {
+      width: 100%;
+      text-align: center;
+    }
+    .footer-col h4 {
+      margin-bottom: 20px;
+    }
+    .footer-col h4::before {
+      height: 0;
+    }
+  }
+
+  /*  olas  */
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+
+  .wave#wave1 {
+    z-index: 10;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 18s linear infinite;
+  }
+
+  .wave#wave2 {
+    z-index: 9;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 18s linear infinite;
+  }
+
+  .wave#wave3 {
+    z-index: 10;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 14s linear infinite;
+  }
+
+  .wave#wave4 {
+    z-index: 9;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 14s linear infinite;
+  }
+}
+@keyframes animateWaves {
+  0% {
+    background-position: 1000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+/*------------------------------------*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #cs-footer-1292 {
