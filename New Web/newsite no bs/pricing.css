@@ -4,13 +4,13 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #pricing-1518 {
+  #pricing-section {
     padding: var(--sectionPadding);
     position: relative;
     overflow: hidden;
     z-index: 1;
   }
-  #pricing-1518:before {
+  #pricing-section:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -21,7 +21,7 @@
     top: 0;
     left: 0;
   }
-  #pricing-1518 .cs-container {
+  #pricing-section .cs-container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 34.375rem;
@@ -33,7 +33,7 @@
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
   }
-  #pricing-1518 .cs-content {
+  #pricing-section .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -42,11 +42,11 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #pricing-1518 .cs-title {
+  #pricing-section .cs-title {
     margin: 0;
     max-width: 19ch;
   }
-  #pricing-1518 .cs-card-group {
+  #pricing-section .cs-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 1.8vw, 1.25rem);
   }
-  #pricing-1518 .cs-item {
+  #pricing-section .cs-item {
     list-style: none;
     width: 100%;
     max-width: 28.875rem;
@@ -66,16 +66,16 @@
     align-items: stretch;
     transition: border-color 0.3s;
   }
-  #pricing-1518 .cs-item:hover .cs-wrapper {
+  #pricing-section .cs-item:hover .cs-wrapper {
     border-color: var(--secondary);
   }
-  #pricing-1518 .cs-item:hover .cs-mask {
+  #pricing-section .cs-item:hover .cs-mask {
     --maskBorder: var(--secondary);
   }
-  #pricing-1518 .cs-item:hover .cs-button-solid {
+  #pricing-section .cs-item:hover .cs-button-solid {
     background-color: var(--secondary);
   }
-  #pricing-1518 .cs-flex {
+  #pricing-section .cs-flex {
     text-align: center;
     margin-bottom: -2rem;
     padding: 3rem 2rem;
@@ -88,7 +88,7 @@
     position: relative;
     z-index: 10;
   }
-  #pricing-1518 .cs-desc {
+  #pricing-section .cs-desc {
     font-size: 1.25rem;
     text-align: inherit;
     line-height: 1.2em;
@@ -97,7 +97,7 @@
     color: var(--bodyTextColor);
     display: block;
   }
-  #pricing-1518 .cs-h3 {
+  #pricing-section .cs-h3 {
     font-size: 1.9375rem;
     text-align: inherit;
     line-height: 1.2em;
@@ -106,7 +106,7 @@
     color: var(--headerColor);
     display: block;
   }
-  #pricing-1518 .cs-mask {
+  #pricing-section .cs-mask {
     --maskBG: #fff;
     --maskBorder: #e8e8e8;
     width: 100%;
@@ -114,10 +114,10 @@
     position: absolute;
     z-index: -1;
   }
-  #pricing-1518 .cs-mask path {
+  #pricing-section .cs-mask path {
     transition: stroke 0.3s;
   }
-  #pricing-1518 .cs-wrapper {
+  #pricing-section .cs-wrapper {
     height: 100%;
     /* 24px - 40px left & right */
     /* 24px - 32px bottom */
@@ -133,7 +133,7 @@
     z-index: 1;
     transition: border-color 0.3s;
   }
-  #pricing-1518 .cs-ul {
+  #pricing-section .cs-ul {
     /* 24px - 40px */
     padding: 0 0 clamp(1.5rem, 3vw, 2.5rem) 0;
     box-sizing: border-box;
@@ -144,7 +144,7 @@
     gap: clamp(0.5rem, 1.5vw, 0.75rem);
     position: relative;
   }
-  #pricing-1518 .cs-li {
+  #pricing-section .cs-li {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     list-style: none;
@@ -159,18 +159,18 @@
     align-items: flex-start;
     gap: 1rem;
   }
-  #pricing-1518 .cs-li.cs-disabled {
+  #pricing-section .cs-li.cs-disabled {
     opacity: 0.5;
   }
-  #pricing-1518 .cs-li.cs-disabled .cs-icon {
+  #pricing-section .cs-li.cs-disabled .cs-icon {
     filter: grayscale(1) brightness(300%);
   }
-  #pricing-1518 .cs-icon {
+  #pricing-section .cs-icon {
     width: 1.5rem;
     height: auto;
     display: block;
   }
-  #pricing-1518 .cs-info {
+  #pricing-section .cs-info {
     margin-top: auto;
     /* 16px - 24px */
     padding-top: clamp(1rem, 2vw, 1.5rem);
@@ -181,7 +181,7 @@
     flex-direction: column;
     gap: 1rem;
   }
-  #pricing-1518 .cs-price {
+  #pricing-section .cs-price {
     /* 31px - 39px */
     font-size: clamp(1.9375rem, 4vw, 2.4375rem);
     line-height: 1.2em;
@@ -192,12 +192,12 @@
     justify-content: flex-start;
     align-items: flex-end;
   }
-  #pricing-1518 .cs-duration {
+  #pricing-section .cs-duration {
     font-size: 1.25rem;
     display: block;
     transform: translateY(0.14rem);
   }
-  #pricing-1518 .cs-button-solid {
+  #pricing-section .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -216,7 +216,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #pricing-1518 .cs-button-solid:before {
+  #pricing-section .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -228,21 +228,21 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #pricing-1518 .cs-button-solid:hover:before {
+  #pricing-section .cs-button-solid:hover:before {
     width: 100%;
   }
-  #pricing-1518 .cs-blob {
+  #pricing-section .cs-blob {
     opacity: 0.1;
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
   }
-  #pricing-1518 .cs-button-solid {
+  #pricing-section .cs-button-solid {
     width: 100%;
     transition: background-color 0.3s;
   }
-  #pricing-1518 .cs-background {
+  #pricing-section .cs-background {
     --backgroundBG: #fff;
     width: 100%;
     min-width: 120rem;
@@ -250,20 +250,20 @@
     position: absolute;
     left: 0;
   }
-  #pricing-1518 .cs-background-top {
+  #pricing-section .cs-background-top {
     top: 0;
   }
-  #pricing-1518 .cs-background-bottom {
+  #pricing-section .cs-background-bottom {
     bottom: 0;
     transform: rotateX(180deg);
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #pricing-1518 .cs-container {
+  #pricing-section .cs-container {
     max-width: 80rem;
   }
-  #pricing-1518 .cs-card-group {
+  #pricing-section .cs-card-group {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
@@ -272,7 +272,7 @@
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #pricing-1518 .cs-info {
+  #pricing-section .cs-info {
     flex-direction: row;
   }
 }
