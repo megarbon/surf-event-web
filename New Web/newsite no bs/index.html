@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="speakers.css" />
     <link rel="stylesheet" href="cookies.css" />
     <link rel="stylesheet" href="cta.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -23,7 +28,7 @@
     <!--                 Navigation                   -->
     <!-- ============================================ -->
 
-    <header class="header">
+    <!--<header class="header">
       <a href="#" class="logo"></a>
     </header>
 
@@ -85,8 +90,46 @@
           </div>
         </div>
       </div>
+    </section>-->
+
+    <section class="header">
+      <div class="content">
+        <h2>¡Únete a la Ola de <span>Cambio</span>!</h2>
+        <h3>Surfeando por un Océano Limpio</h3>
+        <p>
+          Únete a nosotros en un emocionante evento de surf y limpieza de
+          playas. ¡Ven y sé parte de la revolución para conservar nuestros
+          océanos! Disfruta del surf mientras ayudamos a limpiar nuestras costas
+          y proteger el medio ambiente marino.
+        </p>
+        <a href="#">Descubre más</a>
+      </div>
+
+      <!--nav-->
+      <div id="video-wrapper">
+        <video autoplay muted loop id="video-background">
+          <source src="../video/surf-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </section>
 
+    <nav class="sticky navbar">
+      <div class="brand  display__logo">
+        <a href="#top" class="nav__link"> <span class="logo">Logo</span></a>
+      </div>
+    
+      <input type="checkbox" id="nav" class="hidden" />
+      <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
+      <div class="nav">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
     <!-- ============================================ -->
     <!--               Why Choose Us                  -->
     <!-- ============================================ -->
@@ -1135,9 +1178,9 @@
     <!--                   Footer                     -->
     <!-- ============================================ -->
 
-    <footer id="cs-footer-1292">
+    <!--<footer id="cs-footer-1292">
       <div class="cs-container">
-        <!-- Logo Group -->
+        <-- Logo Group --a>
         <div class="cs-logo-group">
           <a aria-label="go back to home" class="cs-logo" href="">
             <img
@@ -1168,7 +1211,7 @@
             hi@ecosurf.com
           </a>
         </div>
-        <!-- Links -->
+        <-- Links --a>
         <ul class="cs-nav">
           <li class="cs-nav-li">
             <span class="cs-header">Services</span>
@@ -1238,8 +1281,59 @@
         <a href="" class="cs-copyright-link">Terms of Service</a>
         <a href="" class="cs-copyright-link">Privacy Policy</a>
       </div>
-      <!--Floating Cirlces-->
+      <--Floating Cirlces--a>
       <div class="cs-floater" aria-hidden="true"></div>
+    </footer>-->
+
+    <footer id="footer">
+      <!--olas-->
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <!--footer-->
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">shipping</a></li>
+            <li><a href="#">returns</a></li>
+            <li><a href="#">order status</a></li>
+            <li><a href="#">payment options</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="#">watch</a></li>
+            <li><a href="#">bag</a></li>
+            <li><a href="#">shoes</a></li>
+            <li><a href="#">dress</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script>
