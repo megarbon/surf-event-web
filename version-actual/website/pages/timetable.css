@@ -15,6 +15,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra */
   margin-bottom: 220px;
+  margin-top: 120px;
 }
 
 .event-container h3.year {
@@ -30,6 +31,7 @@ body {
   display: flex;
   border-radius: 10px;
   overflow: hidden; /* Evitar que las sombras se superpongan */
+  padding: 1em;
 }
 
 .event .event-left {
