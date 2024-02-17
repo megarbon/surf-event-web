@@ -7,6 +7,10 @@ body {
   background-position: center;
 }
 
+.navbar{
+  background-color: var(--primaryLight) !important;
+}
+
 .event-container {
   max-width: 800px;
   margin: 50px auto;

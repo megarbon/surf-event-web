@@ -3,10 +3,10 @@
 <--- -------------------------- -*/
 
 
-  #cs-contact-242 {
+  #cs-contact {
     padding: var(--sectionPadding);
   }
-  #cs-contact-242 .cs-container {
+  #cs-contact .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -16,7 +16,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #cs-contact-242 .cs-content {
+  #cs-contact .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -25,7 +25,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #cs-contact-242 .cs-topper {
+  #cs-contact .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -36,7 +36,7 @@
     margin-bottom: 0.25rem;
     display: block;
   }
-  #cs-contact-242 .cs-title {
+  #cs-contact .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -46,7 +46,7 @@
     color: var(--headerColor);
     position: relative;
   }
-  #cs-contact-242 .cs-text {
+  #cs-contact .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
     text-align: inherit;
@@ -55,7 +55,7 @@
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #cs-contact-242 #cs-form-242 {
+  #cs-contact #cs-form-242 {
     width: 100%;
     /* 32px - 40px */
     margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
@@ -66,7 +66,7 @@
     border: 1px solid #dad9e3;
     border-radius: 1rem;
   }
-  #cs-contact-242 .cs-label {
+  #cs-contact .cs-label {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.3vw, 1rem);
     line-height: 1.5em;
@@ -79,12 +79,12 @@
     align-items: flex-start;
     flex-direction: column;
   }
-  #cs-contact-242 .cs-label-message {
+  #cs-contact .cs-label-message {
     /* 32px - 40px */
     margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
   }
-  #cs-contact-242 .cs-input,
-  #cs-contact-242 .cs-textarea {
+  #cs-contact .cs-input,
+  #cs-contact .cs-textarea {
     font-size: 1rem;
     width: 100%;
     height: 4rem;
@@ -97,25 +97,26 @@
     box-sizing: border-box;
     transition: border 0.3s;
   }
-  #cs-contact-242 .cs-input:hover,
-  #cs-contact-242 .cs-textarea:hover {
+  #cs-contact .cs-input:hover,
+  #cs-contact .cs-textarea:hover {
     border: 1px solid var(--primary);
   }
-  #cs-contact-242 .cs-input::placeholder,
-  #cs-contact-242 .cs-textarea::placeholder {
+  #cs-contact .cs-input::placeholder,
+  #cs-contact .cs-textarea::placeholder {
     color: #7d799c;
   }
-  #cs-contact-242 .cs-textarea {
+  #cs-contact .cs-textarea {
     font-family: inherit;
     margin: 0;
     padding-top: 1.25rem;
     min-height: 7.5rem;
   }
-  #cs-contact-242 .cs-button-solid {
+  #cs-contact .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
     text-decoration: none;
+    border-radius: 10px;
     font-weight: 700;
     text-align: center;
     margin: 0;
@@ -123,14 +124,13 @@
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
-    border-radius: 0.25rem;
     display: inline-block;
     position: relative;
     z-index: 1;
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #cs-contact-242 .cs-button-solid:before {
+  #cs-contact .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -140,21 +140,21 @@
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #cs-contact-242 .cs-button-solid:hover:before {
+  #cs-contact .cs-button-solid:hover:before {
     width: 100%;
+    border-radius: 10px;
   }
-  #cs-contact-242 .cs-submit {
+  #cs-contact .cs-submit {
     width: 100%;
     border: none;
     border-radius: 0.5rem;
   }
-  #cs-contact-242 .cs-submit:hover {
+  #cs-contact .cs-submit:hover {
     cursor: pointer;
   }
-  #cs-contact-242 .cs-right-section {
+  #cs-contact .cs-right-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -164,7 +164,7 @@
     gap: clamp(1.75rem, 4vw, 2.5rem);
     position: relative;
   }
-  #cs-contact-242 .cs-ul {
+  #cs-contact .cs-ul {
     padding: 0;
     /* 16px - 32px */
     padding-left: clamp(1rem, 3vw, 2rem);
@@ -176,20 +176,20 @@
     flex-direction: column;
     gap: 1.25rem;
   }
-  #cs-contact-242 .cs-li {
+  #cs-contact .cs-li {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
-  #cs-contact-242 .cs-li:hover .cs-icon-wrapper {
+  #cs-contact .cs-li:hover .cs-icon-wrapper {
     transform: scale(1.2);
   }
-  #cs-contact-242 .cs-li:nth-of-type(2) {
+  #cs-contact .cs-li:nth-of-type(2) {
     padding-bottom: 1.25rem;
     border-bottom: 1px solid #dad9e3;
   }
-  #cs-contact-242 .cs-header {
+  #cs-contact .cs-header {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     font-weight: 700;
@@ -198,7 +198,7 @@
     color: var(--headerColor);
     display: block;
   }
-  #cs-contact-242 .cs-link {
+  #cs-contact .cs-link {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.2em;
@@ -206,10 +206,10 @@
     color: var(--bodyTextColor);
     position: relative;
   }
-  #cs-contact-242 .cs-link:hover:before {
+  #cs-contact .cs-link:hover:before {
     width: 100%;
   }
-  #cs-contact-242 .cs-link:before {
+  #cs-contact .cs-link:before {
     /* top right box */
     content: "";
     width: 0%;
@@ -223,11 +223,11 @@
     left: 0;
     transition: width 0.3s;
   }
-  #cs-contact-242 .cs-block {
+  #cs-contact .cs-block {
     /* drop the address to two lines */
     display: block;
   }
-  #cs-contact-242 .cs-icon-wrapper {
+  #cs-contact .cs-icon-wrapper {
     /* 32px - 36px */
     margin-right: clamp(2rem, 2.5vw, 2.25rem);
     display: flex;
@@ -237,13 +237,13 @@
     flex: none;
     transition: transform 0.3s;
   }
-  #cs-contact-242 .cs-icon {
+  #cs-contact .cs-icon {
     /* 32px -36px */
     width: clamp(2rem, 3vw, 2.25rem);
     height: auto;
     display: block;
   }
-  #cs-contact-242 .cs-picture {
+  #cs-contact .cs-picture {
     width: 100%;
     border-radius: clamp(1rem, 1.5vw, 1.25rem);
     /* clips image corners */
@@ -253,7 +253,7 @@
     /* width divided height */
     aspect-ratio: 1.44;
   }
-  #cs-contact-242 .cs-img {
+  #cs-contact .cs-img {
     position: absolute;
     top: 0;
     left: 0;
@@ -264,7 +264,7 @@
 
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75rem) {
-  #cs-contact-242 #cs-form-242 {
+  #cs-contact #cs-form-242 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -272,16 +272,16 @@
     /* sends it to the right in the 2nd position */
     order: 2;
   }
-  #cs-contact-242 .cs-label {
+  #cs-contact .cs-label {
     width: 48%;
   }
-  #cs-contact-242 .cs-label-message {
+  #cs-contact .cs-label-message {
     width: 100%;
   }
-  #cs-contact-242 .cs-button-solid {
+  #cs-contact .cs-button-solid {
     margin-left: 0;
   }
-  #cs-contact-242 .cs-right-section {
+  #cs-contact .cs-right-section {
     flex-direction: row;
     align-items: center;
   }
