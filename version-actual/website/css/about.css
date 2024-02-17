@@ -1,9 +1,6 @@
 /*-- -------------------------- -->
 <---         Services           -->
 <--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
     #services {
       padding: var(--sectionPadding);
       background-color: #f7f7f7;
@@ -224,7 +221,6 @@
     #services .cs-button-solid:hover:before {
       width: 100%;
     }
-  }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
     #services .cs-picture {
