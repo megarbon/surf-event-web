@@ -8,6 +8,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-top: 3em;
 }
 
 .logo-slider::before,
@@ -40,7 +41,7 @@
 }
 
 .logo-slider .logo-slide-track {
-  -webkit-animation: logo-scroll 60s linear infinite;
+  -webkit-animation: logo-scroll 20s linear infinite;
   animation: logo-scroll 60s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;

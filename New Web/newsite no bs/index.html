@@ -92,7 +92,7 @@
       </div>
     </section>-->
 
-    <section class="header">
+    <section class="header hero">
       <div class="content">
         <h2>¡Únete a la Ola de <span>Cambio</span>!</h2>
         <h3>Surfeando por un Océano Limpio</h3>
@@ -105,7 +105,9 @@
         <a href="#">Descubre más</a>
       </div>
 
-      <!--nav-->
+      <!-- ============================================ -->
+      <!--              Navbar y video              -->
+      <!-- ============================================ -->
       <div id="video-wrapper">
         <video autoplay muted loop id="video-background">
           <source src="../video/surf-video.mp4" type="video/mp4" />
@@ -114,21 +116,14 @@
       </div>
     </section>
 
-    <nav class="sticky navbar">
-      <div class="brand  display__logo">
-        <a href="#top" class="nav__link"> <span class="logo">Logo</span></a>
-      </div>
-    
-      <input type="checkbox" id="nav" class="hidden" />
-      <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
-      <div class="nav">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-        </ul>
-      </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
     <!-- ============================================ -->
     <!--               Why Choose Us                  -->
@@ -338,12 +333,12 @@
             <!--Tablet and above Image-->
             <source
               media="(min-width: 601px)"
-              srcset="../images/stock/surfers2.jpg"
+              srcset="../images/stock/surfboards.jpg"
             />
             <img
               loading="lazy"
               decoding="async"
-              src="../images/stock/surfers2.jpg"
+              src="../images/stock/vertical1.jpg"
               alt="people standing"
               width="605"
               height="690"
@@ -470,38 +465,60 @@
     <!-- ============================================ -->
     <!--                   Speakers Section              -->
     <!-- ============================================ -->
+
+    <div class="section-intro">
+      <h2 class="intro-title">Explora las Voces Inspiradoras</h2>
+      <p class="intro-paragraph">
+        Sumérgete en las perspectivas únicas y las ideas innovadoras de nuestros
+        distinguidos ponentes. Desde físicos renombrados hasta apasionados
+        defensores del medio ambiente, cada charla ofrece una oportunidad
+        emocionante para aprender, reflexionar y conectarse con la comunidad.
+        Únete a nosotros para explorar los desafíos y las soluciones que
+        enfrentamos en la intersección de la ciencia, el surf y la ecología.
+        Nuestros ponentes, expertos en sus campos, te guiarán en un viaje de
+        descubrimiento y aprendizaje mientras compartimos historias, insights y
+        acciones para crear un futuro más sostenible para nuestro planeta y
+        nuestras comunidades.
+      </p>
+    </div>
+
     <section class="speakers-section" id="section_3">
       <div class="container">
         <!-- Item 1 -->
         <div class="item-container">
           <div class="img-container">
-            <img src="../images/stock/vertical1.jpg" alt="Event image" />
+            <img
+              src="../images/artists/Emmy-Noether-young.jpg"
+              alt="Event image"
+            />
           </div>
 
           <div class="body-container">
             <div class="overlay"></div>
 
             <div class="event-info">
-              <p class="title">Albert Einstein</p>
+              <p class="title">Amy Noether</p>
               <div class="separator"></div>
-              <p class="info">Premio Nobel de Física</p>
+              <p class="info">La Física detrás del Cambio Climático</p>
               <p class="info description">
-                ¡Bienvenidos! Únete a nosotros para una charla fascinante sobre
-                física y cambio climático dirigida por el renombrado físico
-                teórico Albert Einstein. Descubre cómo la ciencia puede
-                ayudarnos a comprender y abordar los desafíos ambientales que
-                enfrenta nuestro planeta.
+                Únete a Amy Noether, experta en física y medio ambiente,
+                mientras explora el impacto del cambio climático desde una
+                perspectiva científica. Descubre cómo la física puede ayudarnos
+                a comprender y abordar los desafíos ambientales que enfrenta
+                nuestro planeta.
               </p>
             </div>
           </div>
-          <button class="action">Reservar</button>
         </div>
         <!-- Fin del Item 1 -->
 
         <!-- Item 2 -->
         <div class="item-container">
           <div class="img-container">
-            <img src="../images/stock/surfboards.jpg" alt="Event image" />
+            <img
+              src="../images/artists/Albert_Einstein_Head.jpg"
+              alt="Event image"
+            />
           </div>
 
           <div class="body-container">
@@ -510,45 +527,122 @@
             <div class="event-info">
               <p class="title">Albert Einstein</p>
               <div class="separator"></div>
-              <p class="info">Premio Nobel de Física</p>
+              <p class="info">Las Leyes de la Naturaleza y el Surf</p>
               <p class="info description">
-                ¡Bienvenidos! Únete a nosotros para una charla fascinante sobre
-                física y cambio climático dirigida por el renombrado físico
-                teórico Albert Einstein. Descubre cómo la ciencia puede
-                ayudarnos a comprender y abordar los desafíos ambientales que
-                enfrenta nuestro planeta.
+                Únete a Albert Einstein, premio Nobel de Física, en una charla
+                fascinante sobre la intersección entre las leyes de la
+                naturaleza y el surf. Descubre cómo la ciencia y el arte se
+                entrelazan en el mundo del surf y cómo podemos proteger nuestros
+                océanos para las generaciones futuras.
               </p>
             </div>
           </div>
-          <button class="action">Reservar</button>
         </div>
         <!-- Fin del Item 2 -->
 
         <!-- Item 3 -->
         <div class="item-container">
           <div class="img-container">
-            <img src="../images/stock/vertical1.jpg" alt="Event image" />
+            <img
+              src="../images/artists/richard-feynman-2.jpg"
+              alt="Event image"
+            />
           </div>
 
           <div class="body-container">
             <div class="overlay"></div>
 
             <div class="event-info">
-              <p class="title">Albert Einstein</p>
+              <p class="title">Richard Feynman</p>
               <div class="separator"></div>
-              <p class="info">Premio Nobel de Física</p>
+              <p class="info">Explorando el Océano: Una Perspectiva Física</p>
               <p class="info description">
-                ¡Bienvenidos! Únete a nosotros para una charla fascinante sobre
-                física y cambio climático dirigida por el renombrado físico
-                teórico Albert Einstein. Descubre cómo la ciencia puede
-                ayudarnos a comprender y abordar los desafíos ambientales que
-                enfrenta nuestro planeta.
+                Sumérgete en el mundo del surf y la física con Richard Feynman.
+                Acompáñalo mientras examina las olas desde una perspectiva
+                científica y nos lleva a un viaje por la física de los océanos.
+                ¡Una charla imperdible para amantes del surf y la ciencia!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Item 3 -->
+
+        <!-- Item 4 -->
+        <div class="item-container">
+          <div class="img-container">
+            <img src="../images/artists/juan-carlos.jpeg" alt="Event image" />
+          </div>
+
+          <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+              <p class="title">Juan Carlos Millán</p>
+              <div class="separator"></div>
+              <p class="info">Visionario de la Naturaleza</p>
+              <p class="info description">
+                Sumérgete en la belleza de la naturaleza con nuestro fotógrafo
+                especializado en vida salvaje. Explora las increíbles imágenes
+                de la vida marina y costera mientras descubres la importancia de
+                conservar nuestros ecosistemas naturales.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del Item 4 -->
+
+        <!-- Item 5 -->
+        <div class="item-container">
+          <div class="img-container">
+            <img src="../images/artists/angela-davis.jpeg" alt="Event image" />
+          </div>
+
+          <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+              <p class="title">Angelina Jolie</p>
+              <div class="separator"></div>
+              <p class="info">Bióloga y Ecologista Climática</p>
+              <p class="info description">
+                Únete a nuestra ecologista bióloga en una exploración de los
+                ecosistemas costeros y la importancia de preservarlos. Descubre
+                cómo cada acción individual puede marcar la diferencia en la
+                protección de nuestro hogar, la Tierra.
               </p>
             </div>
           </div>
           <button class="action">Reservar</button>
         </div>
-        <!-- Fin del Item 3 -->
+        <!-- Fin del Item 5-->
+
+        <!-- Item 6 -->
+        <div class="item-container">
+          <div class="img-container">
+            <img
+              src="../images/artists/natalia-vaitekevich.jpeg"
+              alt="Event image"
+            />
+          </div>
+
+          <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+              <p class="title">Natalia Travnichak</p>
+              <div class="separator"></div>
+              <p class="info">Conexión con el Océano: Una Historia de Pasión</p>
+              <p class="info description">
+                Únete a nuestra surfera profesional mientras comparte su pasión
+                por las olas y la conexión única que experimentamos en el
+                océano. Descubre cómo el surf puede inspirarnos a cuidar nuestro
+                planeta y a vivir en armonía con la naturaleza.
+              </p>
+            </div>
+          </div>
+          <button class="action">Reservar</button>
+        </div>
+        <!-- Fin del Item 6 -->
       </div>
     </section>
 
@@ -599,6 +693,27 @@
         </div>
         <div class="slide">
           <img src="../images/logos/eco-surf-logo-b-2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../images/logos/mahou_1200_color.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../images/logos/Gillette-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../images/logos/GoPro_logo.svg.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../images/logos/aws-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../images/logos/North-Face-Logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../images/logos/ies_el_lago logo.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../images/logos/prime-drink-logo.png" alt="" />
         </div>
       </div>
     </div>
@@ -1297,35 +1412,35 @@
       <!--footer-->
       <div class="row">
         <div class="footer-col">
-          <h4>company</h4>
+          <h4>EcoSurf</h4>
           <ul>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">our services</a></li>
-            <li><a href="#">privacy policy</a></li>
-            <li><a href="#">affiliate program</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Actividades</a></li>
+            <li><a href="#">Politica de Privacidad</a></li>
+            <li><a href="#">Voluntariado</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>get help</h4>
+          <h4>Necesitas ayuda?</h4>
           <ul>
             <li><a href="#">FAQ</a></li>
-            <li><a href="#">shipping</a></li>
-            <li><a href="#">returns</a></li>
-            <li><a href="#">order status</a></li>
-            <li><a href="#">payment options</a></li>
+            <li><a href="#">Ubicación</a></li>
+            <li><a href="#">Calendario</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Consultas</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>online shop</h4>
+          <h4>Marcas</h4>
           <ul>
-            <li><a href="#">watch</a></li>
-            <li><a href="#">bag</a></li>
-            <li><a href="#">shoes</a></li>
-            <li><a href="#">dress</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Inversores</a></li>
+            <li><a href="#">Gubernamental</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>follow us</h4>
+          <h4>Redes Sociales</h4>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
