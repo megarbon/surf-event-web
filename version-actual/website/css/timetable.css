@@ -110,3 +110,41 @@ body {
     font-size: 24px;
   }
 }
+
+/* Estilos para el contenedor del video */
+.video-container {
+  max-width: 1200px;
+  margin: 50px auto; /* Centramos el contenedor verticalmente */
+  padding: 20px;
+  border: 2px solid #ccc; /* Borde gris */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.644); /* Sombra suave */
+  margin-bottom: 200px;
+}
+
+/* Estilos para el video */
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para el título del video */
+.video-title {
+  text-align: center; /* Centramos horizontalmente */
+  margin-bottom: 20px;
+  font-size: 48px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  font-weight: bold;
+}
+
+.transcription-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+  font-weight: bold;
+}
