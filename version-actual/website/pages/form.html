@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Registro Responsivo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registro</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Nombre Completo</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Introduce tu nombre completo"
+              required
+              aria-label="Nombre completo"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="username">Usuario</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Introduce un nombre de usuario"
+              required
+              aria-label="Usuario"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce un Email válido"
+              required
+              aria-label="Email"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Teléfono</label>
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Introduce tu número de teléfono"
+              required
+              aria-label="Teléfono"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce una contraseña segura"
+              required
+              aria-label="Contraseña"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirmar Contraseña</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Vuelve a introducir la contraseña"
+              required
+              aria-label="Confirmar contraseña"
+            />
+          </div>
+        </div>
+        <div class="category-details-box">
+          <span class="category-title">Categoría</span>
+          <div class="category-category">
+            <input
+              type="radio"
+              name="category"
+              id="voluntario"
+              required
+              aria-label="Voluntario"
+            />
+            <label for="voluntario">Voluntario</label>
+            <input
+              type="radio"
+              name="category"
+              id="profesional"
+              required
+              aria-label="Profesional"
+            />
+            <label for="profesional">Profesional</label>
+            <input
+              type="radio"
+              name="category"
+              id="visitante"
+              required
+              aria-label="Visitante"
+            />
+            <label for="visitante">Visitante</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Registrarse" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

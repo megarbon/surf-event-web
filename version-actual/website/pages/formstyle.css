@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("ruta/a/tu/imagen.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5); /* Aplica un filtro oscuro */
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  padding: 28px;
+  margin: 0 28px;
+  border-radius: 10px;
+  box-shadow: inset -2px 2px 2px white;
+  background: url(../../images/stock/vertical1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0); /* Añade un fondo negro transparente */
+  color: white; /* Cambia el color del texto a blanco */
+  padding: 20px; /* Ajusta el espacio interno del contenedor */
+  border-radius: 10px; /* Añade esquinas redondeadas */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="submit"] {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.541
+  ); /* Cambia el color de fondo de los campos de entrada */
+  border: 1px solid rgba(255, 255, 255, 0.863); /* Añade un borde */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  background-color: rgba(
+    39,
+    39,
+    39,
+    0.2
+  ); /* Cambia el color de fondo cuando el campo está seleccionado */
+  border: 1px solid white; /* Cambia el color del borde cuando el campo está seleccionado */
+}
+
+.form-title {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 6px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  border-bottom: solid 1px white;
+}
+
+.main-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n) {
+  justify-content: end;
+}
+
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+
+.user-input-box label {
+  width: 95%;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.user-input-box input {
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+
+.gender-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+
+.gender-category {
+  margin: 15px 0;
+  color: white;
+}
+
+.gender-category label {
+  padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input {
+  cursor: pointer;
+}
+
+.form-submit-btn {
+  margin-top: 40px;
+}
+
+.form-submit-btn input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: rgb(209, 209, 209);
+  background: rgba(63, 114, 76, 0.7);
+}
+
+.form-submit-btn input:hover {
+  background: rgba(56, 204, 93, 0.7);
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-width: 280px;
+  }
+
+  .user-input-box {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  .user-input-box:nth-child(2n) {
+    justify-content: space-between;
+  }
+
+  .gender-category {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main-user-info {
+    max-height: 380px;
+    overflow: auto;
+  }
+
+  .main-user-info::-webkit-scrollbar {
+    width: 0;
+  }
+}
