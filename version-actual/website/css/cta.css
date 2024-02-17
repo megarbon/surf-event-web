@@ -45,7 +45,7 @@
   font-size: 1.2em;
 }
 
-.content a {
+.content .cs-button-solid {
   display: inline-block;
   font-size: 1em;
   background: #ffc164ff;
@@ -60,7 +60,7 @@
   transition: 0.2s;
 }
 
-.content a:hover {
+.content .cs-button-solid:hover {
   background: #a5a5a5;
   color: #0e3755ff;
 }
