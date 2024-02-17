@@ -198,6 +198,7 @@
       margin: clamp(1.75rem, 3.9vw, 2.5rem) 0 0 0;
       /* prevents padding from affecting height and width */
       box-sizing: border-box;
+      border-radius: 10px;
       padding: 0 1.5rem;
       color: #fff;
       background-color: var(--primary);
@@ -220,6 +221,7 @@
     }
     #services .cs-button-solid:hover:before {
       width: 100%;
+      border-radius: 10px;
     }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
