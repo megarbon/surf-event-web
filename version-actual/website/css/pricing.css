@@ -1,9 +1,6 @@
 /*-- -------------------------- -->
 <---          Pricing           -->
 <--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
   #pricing-section {
     padding: var(--sectionPadding);
     position: relative;
@@ -257,7 +254,6 @@
     bottom: 0;
     transform: rotateX(180deg);
   }
-}
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #pricing-section .cs-container {
