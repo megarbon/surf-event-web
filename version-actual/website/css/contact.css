@@ -3,7 +3,7 @@
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
+
   #contact {
     padding: var(--sectionPadding);
     position: relative;
@@ -244,7 +244,7 @@
     overflow: hidden;
     transition: opacity 0.3s, padding-bottom 0.3s;
   }
-}
+
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #contact .cs-container {
