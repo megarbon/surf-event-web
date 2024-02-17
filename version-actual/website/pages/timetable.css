@@ -95,18 +95,3 @@ body {
   margin-right: 8px;
 }
 
-@media (max-width: 550px) {
-  .event {
-    flex-direction: column;
-  }
-
-  .event .event-left {
-    min-width: auto;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .event .event-left .event-date .date,
-  .event .event-left .event-date .month {
-    font-size: 24px;
-  }
-}
