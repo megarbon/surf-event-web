@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navigationWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: #000000;
+        color: white;
+      }
+
+      .logoWrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #ead24c;
+      }
+
+      .navigation {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .parent {
+        margin-left: 20px;
+      }
+
+      .link {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s;
+      }
+
+      .link:hover {
+        color: #ea4f4c;
+      }
+
+      @media screen and (max-width: 768px) {
+        .navigationWrapper {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .logoWrapper {
+          margin-bottom: 20px;
+        }
+
+        .navigation {
+          flex-direction: column;
+        }
+
+        .parent {
+          padding: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navigationWrapper">
+      <div class="logoWrapper">
+        <span class="logo">Eco Surf</span>
+      </div>
+      <ul class="navigation">
+        <li class="parent"><a class="link" href="#">Inicio</a></li>
+        <li class="parent"><a class="link" href="#">About</a></li>
+        <li class="parent"><a class="link" href="#">Actividades</a></li>
+        <li class="parent"><a class="link" href="#">Ponentes</a></li>
+        <li class="parent"><a class="link" href="#">Horario</a></li>
+        <li class="parent"><a class="link" href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
