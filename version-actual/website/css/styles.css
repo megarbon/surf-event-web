@@ -89,6 +89,7 @@ body {
 }
 
 .cs-text {
+  font-family: "Geist", sans-serif;
   font-size: var(--bodyFontSize);
   line-height: 1.5em;
   text-align: inherit;
@@ -100,13 +101,13 @@ body {
 
 @font-face {
   font-family: "Geist";
-  src: url("../fonts/GeistMono-Regular.woff2") format("woff2");
+  src: url("../../fonts/GeistMono-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Geist";
-  src: url("../fonts/GeistMono-Bold.woff2") format("woff2");
+  src: url("../../fonts/GeistMono-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
