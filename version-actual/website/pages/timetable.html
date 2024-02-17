@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="timetable.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <nav class="sticky navbar">
+      <div class="brand display__logo">
+        <a href="#top" class="nav__link"> <span class="logo">Logo</span></a>
+      </div>
+
+      <input type="checkbox" id="nav" class="hidden" />
+      <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
+      <div class="nav">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="event-container">
+      <h3 class="year">Junio</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">15</div>
+            <div class="month">Jun</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Limpieza de Playa en La Concha</h3>
+
+          <div class="event-description">
+            Únete a nosotros para limpiar la playa de La Concha en San
+            Sebastián, una de las playas más hermosas de España.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <h3 class="year">Julio</h3>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">12</div>
+            <div class="month">Jul</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Competición de Surf en Zarautz</h3>
+
+          <div class="event-description">
+            Únete a la competición anual de surf en Zarautz y disfruta de las
+            olas en una de las mejores playas de surf de España.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 9:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">28</div>
+            <div class="month">Jul</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">
+            Limpieza de Playa en Playa de las Canteras
+          </h3>
+
+          <div class="event-description">
+            Ayúdanos a limpiar la hermosa Playa de las Canteras en Las Palmas de
+            Gran Canaria y proteger nuestro océano.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 11:00 am
+          </div>
+        </div>
+      </div>
+
+      <h3 class="year">Agosto</h3>
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">5</div>
+            <div class="month">Ago</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Competición de Surf en Tarifa</h3>
+
+          <div class="event-description">
+            Disfruta de la competición anual de surf en Tarifa, la capital del
+            viento y una de las mejores playas para practicar este deporte en el
+            sur de España.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 10:00 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">17</div>
+            <div class="month">Ago</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Limpieza de Playa en Cabo de Gata</h3>
+
+          <div class="event-description">
+            Únete a nuestra iniciativa de limpieza de playa en Cabo de Gata, uno
+            de los parques naturales más impresionantes de la costa este de
+            España.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 11:30 am
+          </div>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="event-left">
+          <div class="event-date">
+            <div class="date">29</div>
+            <div class="month">Ago</div>
+          </div>
+        </div>
+
+        <div class="event-right">
+          <h3 class="event-title">Competición de Bodyboard en Valencia</h3>
+
+          <div class="event-description">
+            Ven y participa en la emocionante competición de bodyboard en las
+            playas de Valencia, donde las olas te esperan para una experiencia
+            inolvidable.
+          </div>
+
+          <div class="event-timing">
+            <img src="images/time.png" alt="" /> 9:00 am
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <!--olas-->
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <!--footer-->
+      <div class="row">
+        <div class="footer-col">
+          <h4>EcoSurf</h4>
+          <ul>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Actividades</a></li>
+            <li><a href="#">Politica de Privacidad</a></li>
+            <li><a href="#">Voluntariado</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Necesitas ayuda?</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Ubicación</a></li>
+            <li><a href="#">Calendario</a></li>
+            <li><a href="#">Devoluciones</a></li>
+            <li><a href="#">Consultas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Marcas</h4>
+          <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Prensa</a></li>
+            <li><a href="#">Inversores</a></li>
+            <li><a href="#">Gubernamental</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Redes Sociales</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
