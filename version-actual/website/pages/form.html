@@ -2,406 +2,115 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <title>Formulario de Registro Responsivo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulario de Registro para Competición de Surf</title>
     <link rel="stylesheet" href="formstyle.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
-    <!-- ============================================ -->
-    <!--                   Navigation                     -->
-    <!-- ============================================ -->
-    <nav class="sticky navbar">
-      <div class="brand display__logo">
-        <a href="#top" class="nav__link">
-          <img src="../images/logos/Ecosurf/eco-surf-logo-w-1.png"
-        /></a>
-      </div>
-
-      <input type="checkbox" id="nav" class="hidden" />
-      <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
-      <div class="nav">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Inicio</a>
-          </li>
-          <li class="nav__item">
-            <a href="secondpage.html" class="nav__link">Conocenos</a>
-          </li>
-          <li class="nav__item"><a href="#" class="nav__link">Tabla</a></li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Formulario</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- ============================================ -->
-    <!--                   Review                     -->
-    <!-- ============================================ -->
-
-    <section id="reviews-1529">
-      <div class="cs-container">
-        <div class="cs-content">
-          <span class="cs-topper">Testimonios</span>
-          <h2 class="cs-title">Ana, una voluntaria de la anterior edición</h2>
-          <p class="cs-text">
-            "Me encantó la experiencia, fue muy enriquecedora y me sentí muy
-            bien ayudando a la comunidad. Además, conocí a mucha gente
-            interesante y aprendí mucho sobre el surf y el medio ambiente."
-          </p>
-        </div>
-        <div class="cs-review">
-          <div class="cs-image-group">
-            <picture class="cs-picture">
-              <img
-                decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/day-care-review.png"
-                alt="person"
-                width="413"
-                height="374"
-                aria-hidden="true"
-              />
-            </picture>
-            <svg
-              class="cs-mask"
-              width="100%"
-              height="100%"
-              viewBox="0 0 264 288"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M266 0H0V288H266V0ZM22.47 277.06C-3.13 224.38 3.86 98.26 11.47 34.79C14.17 12.21 18.6 9.69 30.47 8.97C77.4 6.16 139.23 4.6 215.47 5C233.88 5.12 249.16 15.2 255.47 48.69C265.38 101.42 261.07 155.11 256.9 207.21C256.76 208.98 256.62 210.76 256.47 212.53C255.06 230.47 252.33 246.68 248.47 260.19C246.3 267.74 243.11 270.79 238.47 270.12C168.15 260.11 100.01 269.4 30.47 283.03C28.95 283.34 27.89 283.03 26.47 282.04C25.05 281.04 23.47 279.16 22.47 277.08V277.06Z"
-                fill="var(--maskBG)"
-              />
-              <path
-                d="M11.4688 34.7899C3.85881 98.2599 -3.13119 224.37 22.4688 277.06C23.4688 279.14 25.0488 281.02 26.4688 282.02C27.8888 283.02 28.9488 283.32 30.4688 283.01C100.009 269.38 168.149 260.09 238.469 270.1C243.109 270.77 246.299 267.72 248.469 260.17C252.329 246.66 255.059 230.45 256.469 212.51C260.759 158.76 265.719 103.2 255.469 48.6799C249.159 15.1999 233.879 5.10993 215.469 4.98993C139.229 4.58993 77.3988 6.15993 30.4688 8.95993C18.5988 9.66993 14.1688 12.1999 11.4688 34.7799V34.7899Z"
-                stroke="var(--maskBorder)"
-                stroke-width="8"
-              />
-            </svg>
-          </div>
-          <div class="cs-flex">
-            <p class="cs-quote">
-              "Me encantó la experiencia, fue muy enriquecedora y me sentí muy
-              bien ayudando a la comunidad. Además, conocí a mucha gente
-              interesante y aprendí mucho sobre el surf y el medio ambiente."
-            </p>
-            <span class="cs-name">Ana Maria</span>
-            <span class="cs-job">Amante de la naturaleza y el surf</span>
-          </div>
-          <div class="cs-blob-wrapper">
-            <!--Wrapper in a div so we dont need to set overflow hidden on the cs-review to clip them, which would clip the floating graphics as well. Instead we have a sacrifical div to clip the blobs inside of-->
-            <!--Left Blob-->
-            <svg
-              class="cs-blob cs-blob1"
-              width="162"
-              height="128"
-              viewBox="0 0 162 128"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9003 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z"
-                fill="var(--blobColor)"
-              />
-            </svg>
-            <!--RIght blob-->
-            <svg
-              class="cs-blob cs-blob2"
-              width="423"
-              height="152"
-              viewBox="0 0 423 152"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
-                fill="var(--blobColor)"
-              />
-            </svg>
-          </div>
-          <!--Green Squiggles-->
-          <img
-            class="cs-graphic cs-graphic-one"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-four.svg"
-            alt="graphic"
-            loading="lazy"
-            decoding="async"
-            height="134"
-            width="197"
-          />
-          <!--Rd Squiggle-->
-          <img
-            class="cs-graphic cs-graphic-two"
-            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-three.svg"
-            alt="graphic"
-            loading="lazy"
-            decoding="async"
-            height="191"
-            width="138"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <!-- Mapa -->
-      <iframe
-        class="cs-img"
-        aria-hidden="true"
-        loading="lazy"
-        decoding="async"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2927.784769869114!2d-2.2067887845240046!3d43.32267697913347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51fbd4d5d2f239%3A0x39c1066c4da62c54!2sPlaya%20de%20la%20Concha!5e0!3m2!1ses!2ses!4v1646080687659!5m2!1ses!2ses"
-        width="100%"
-        height="500"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-      ></iframe>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact-242">
-      <div class="cs-container">
-        <div class="cs-content">
-          <span class="cs-topper">Interesad@ ?</span>
-          <h2 class="cs-title">Registrate Aquí</h2>
-          <p class="cs-text">
-            Si tienes alguna duda o quieres más información, no dudes en
-            contactarnos. Estamos aquí para ayudarte.
-          </p>
-        </div>
-        <!-- Formulario -->
-        <form id="cs-form-242" name="Formulario de Contacto" method="post">
-          <label class="cs-label">
-            Nombre
+    <div class="container">
+      <h1 class="form-title">Registro</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Nombre Completo</label>
             <input
-              class="cs-input"
-              required
               type="text"
-              id="name-242"
-              name="nombre"
-              placeholder="Nombre y Apellido"
-            />
-          </label>
-          <label class="cs-label">
-            Correo Electrónico
-            <input
-              class="cs-input"
+              id="fullName"
+              name="fullName"
+              placeholder="Introduce tu nombre completo"
               required
+              aria-label="Nombre completo"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="username">Usuario</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Introduce un nombre de usuario"
+              required
+              aria-label="Usuario"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input
               type="email"
-              id="email-242"
-              name="correo"
-              placeholder="nombre@dominio.com"
-            />
-          </label>
-          <label class="cs-label">
-            Teléfono
-            <input
-              class="cs-input"
+              id="email"
+              name="email"
+              placeholder="Introduce un Email válido"
               required
+              aria-label="Email"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Teléfono</label>
+            <input
               type="tel"
-              id="phone-242"
-              name="telefono"
-              placeholder="+34 123 456 789"
-            />
-          </label>
-          <label class="cs-label">
-            ¿Cómo nos encontraste?
-            <input
-              class="cs-input"
-              type="text"
-              id="find-242"
-              name="encontraste"
-              placeholder="Redes Sociales, Amigo, Familia..."
-            />
-          </label>
-          <label class="cs-label cs-label-message">
-            Mensaje
-            <textarea
-              class="cs-input cs-textarea"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder="Introduce tu número de teléfono"
               required
-              name="Mensaje"
-              id="message-242"
-              placeholder="Hola, estoy interesado en..."
-            ></textarea>
-          </label>
-
-          <!-- Botones de radio para la selección de categoría -->
-          <label class="cs-label">Categoría</label>
-          <div class="categoria-options">
-            <input
-              type="radio"
-              id="profesional"
-              name="categoria"
-              class="cs-input"
-              value="profesional"
+              aria-label="Teléfono"
             />
-            <label for="profesional" class="cs-label">Profesional</label>
-
+          </div>
+          <div class="user-input-box">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce una contraseña segura"
+              required
+              aria-label="Contraseña"
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirmar Contraseña</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Vuelve a introducir la contraseña"
+              required
+              aria-label="Confirmar contraseña"
+            />
+          </div>
+        </div>
+        <div class="category-details-box">
+          <span class="category-title">Categoría</span>
+          <div class="category-category">
             <input
               type="radio"
+              name="category"
               id="voluntario"
-              name="categoria"
-              class="cs-input"
-              value="voluntario"
+              required
+              aria-label="Voluntario"
             />
-            <label for="voluntario" class="cs-label">Voluntario</label>
-
+            <label for="voluntario">Voluntario</label>
             <input
               type="radio"
+              name="category"
+              id="profesional"
+              required
+              aria-label="Profesional"
+            />
+            <label for="profesional">Profesional</label>
+            <input
+              type="radio"
+              name="category"
               id="visitante"
-              name="categoria"
-              class="cs-input"
-              value="visitante"
+              required
+              aria-label="Visitante"
             />
-            <label for="visitante" class="cs-label">Visitante</label>
-          </div>
-
-          <button class="cs-button-solid cs-submit" type="submit">
-            Enviar Mensaje Ahora
-          </button>
-        </form>
-
-        <!-- Información de Contacto -->
-        <div class="cs-right-section">
-          <ul class="cs-ul">
-            <li class="cs-li">
-              <picture class="cs-icon-wrapper">
-                <img
-                  aria-hidden="true"
-                  src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/mail.svg"
-                  alt="icono de correo"
-                  class="cs-icon"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                />
-              </picture>
-              <div class="cs-flex-group">
-                <span class="cs-header">Correo Electrónico</span>
-                <a href="mailto:support@ecosurf.com" class="cs-link"
-                  >support@ecosurf.com</a
-                >
-              </div>
-            </li>
-            <li class="cs-li">
-              <picture class="cs-icon-wrapper">
-                <img
-                  aria-hidden="true"
-                  src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/phone.svg"
-                  alt="icono de teléfono"
-                  class="cs-icon"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                />
-              </picture>
-              <div class="cs-flex-group">
-                <span class="cs-header">Teléfono</span>
-                <a href="tel:206-987-6543" class="cs-link">(+24) 123-456-789</a>
-              </div>
-            </li>
-            <li class="cs-li">
-              <picture class="cs-icon-wrapper">
-                <img
-                  aria-hidden="true"
-                  src="https://csimg.nyc3.digitaloceanspaces.com/Contact-Page/pin.svg"
-                  alt="icono de dirección"
-                  class="cs-icon"
-                  width="36"
-                  height="36"
-                  decoding="async"
-                />
-              </picture>
-              <div class="cs-flex-group">
-                <span class="cs-header">Dirección</span>
-                <a href="" class="cs-link"
-                  ><span class="cs-block">33 Garyberto's Lane,</span> Andorra La
-                  Vella, AD500</a
-                >
-              </div>
-            </li>
-          </ul>
-          <!-- Picture -->
-          <picture class="cs-picture">
-            <img
-              class="cs-img"
-              aria-hidden="true"
-              loading="lazy"
-              decoding="async"
-              src="../../images/stock/tio-sam.png"
-              alt="google map"
-              width="462"
-              height="438"
-            />
-          </picture>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Footer                     -->
-    <!-- ============================================ -->
-    <footer id="footer">
-      <!--olas-->
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-      </div>
-
-      <!--footer-->
-      <div class="row">
-        <div class="footer-col">
-          <h4>EcoSurf</h4>
-          <ul>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Actividades</a></li>
-            <li><a href="#">Politica de Privacidad</a></li>
-            <li><a href="#">Voluntariado</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Necesitas ayuda?</h4>
-          <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Ubicación</a></li>
-            <li><a href="#">Calendario</a></li>
-            <li><a href="#">Devoluciones</a></li>
-            <li><a href="#">Consultas</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Marcas</h4>
-          <ul>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Prensa</a></li>
-            <li><a href="#">Inversores</a></li>
-            <li><a href="#">Gubernamental</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Redes Sociales</h4>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <label for="visitante">Visitante</label>
           </div>
         </div>
-      </div>
-    </footer>
+        <div class="form-submit-btn">
+          <input type="submit" value="Registrarse" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
