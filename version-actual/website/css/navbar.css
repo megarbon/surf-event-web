@@ -32,13 +32,13 @@
 }
 
 .nav__items {
-	margin: 0;
+	margin-right: 25px;
 	padding: 0;
 	list-style: none;
 }
 
 .nav__link {
-	color: var(--secondary);
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -53,18 +53,16 @@
 	display: block;
 }
 
-.logo {
+.nav__link img {
 	display: inline-block;
-	padding-top: .3125rem;
-	padding-bottom: .3125rem;
-	margin-right: 1rem;
+	padding: 5px 10px 0;
+	width: 9em;
 	line-height: inherit;
 }
 
-.logo::before {
+.nav__link img::before {
 	display: inline-block;
 	vertical-align: top;
-  content: url(E:\GitHub\surf-event-web\final-web\assets\images\logos\eco-surf-logo-b-2.png);
 }
 
 .nav__items {
@@ -74,7 +72,7 @@
 
 .brand .nav__link,
 .nav__items .nav__link {
-	padding: 10px 15px;
+	padding: 0px 15px;
 	text-align: center;
 	display: block;
 }
@@ -86,22 +84,6 @@
 
 .nav__items .nav__link:hover {
 	color: var(--primary);
-}
-
-.nav__item:nth-child(1) .nav__link::before {
-	content: '1. ';
-}
-
-.nav__item:nth-child(2) .nav__link::before {
-	content: '2. ';
-}
-
-.nav__item:nth-child(3) .nav__link::before {
-	content: '3. ';
-}
-
-.nav__item:nth-child(4) .nav__link::before {
-	content: '4. ';
 }
 
 @media (min-width: 800px) {

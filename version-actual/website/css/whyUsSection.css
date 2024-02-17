@@ -1,17 +1,17 @@
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---       Why choose us        -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #why-choose-1485 {
+  #why-choose-us {
     padding: var(--sectionPadding);
     overflow: hidden;
     background-color: #fff8f5;
     position: relative;
     z-index: 1;
   }
-  #why-choose-1485 .cs-container {
+  #why-choose-us .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
@@ -22,7 +22,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #why-choose-1485 .cs-content {
+  #why-choose-us .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -33,16 +33,16 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #why-choose-1485 .cs-title {
+  #why-choose-us .cs-title {
     max-width: 20ch;
   }
-  #why-choose-1485 .cs-text {
+  #why-choose-us .cs-text {
     margin-bottom: 1rem;
   }
-  #why-choose-1485 .cs-text:last-of-type {
+  #why-choose-us .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #why-choose-1485 .cs-ul {
+  #why-choose-us .cs-ul {
     width: 100%;
     max-width: 39.375rem;
     margin: 0 0 2rem 0;
@@ -53,7 +53,7 @@
     /* 24px - 32px */
     gap: clamp(1.5rem, 3vw, 2rem);
   }
-  #why-choose-1485 .cs-li {
+  #why-choose-us .cs-li {
     list-style: none;
     margin: 0;
     /* 24px - 32px */
@@ -65,11 +65,11 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.5vw, 1.25rem);
   }
-  #why-choose-1485 .cs-li:last-of-type {
+  #why-choose-us .cs-li:last-of-type {
     padding: 0;
     border: none;
   }
-  #why-choose-1485 .cs-li-picture {
+  #why-choose-us .cs-li-picture {
     /* 60px - 80px */
     width: clamp(3.75rem, 6vw, 5rem);
     height: clamp(3.75rem, 6vw, 5rem);
@@ -85,7 +85,7 @@
     position: relative;
     z-index: 1;
   }
-  #why-choose-1485 .cs-li-picture:before {
+  #why-choose-us .cs-li-picture:before {
     /* background color */
     content: "";
     width: 100%;
@@ -97,13 +97,13 @@
     top: 0;
     left: 0;
   }
-  #why-choose-1485 .cs-li-icon {
+  #why-choose-us .cs-li-icon {
     /* 24px - 32px */
     width: clamp(1.5rem, 3vw, 2rem);
     height: auto;
     display: block;
   }
-  #why-choose-1485 .cs-h3 {
+  #why-choose-us .cs-h3 {
     font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -111,14 +111,14 @@
     margin: 0 0 0.5rem 0;
     color: var(--headerColor);
   }
-  #why-choose-1485 .cs-li-text {
+  #why-choose-us .cs-li-text {
     font-size: 1rem;
     line-height: 1.5em;
     text-align: left;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #why-choose-1485 .cs-button-solid {
+  #why-choose-us .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -135,23 +135,23 @@
     z-index: 1;
     transition: color 0.3s;
   }
-  #why-choose-1485 .cs-button-solid:before {
+  #why-choose-us .cs-button-solid:before {
     content: "";
     position: absolute;
     display: block;
     height: 100%;
     width: 0%;
-    background: var(--secondary);
+    background: var(--secondaryLight);
     opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
     transition: width 0.3s;
   }
-  #why-choose-1485 .cs-button-solid:hover:before {
+  #why-choose-us .cs-button-solid:hover:before {
     width: 100%;
   }
-  #why-choose-1485 .cs-image-group {
+  #why-choose-us .cs-image-group {
     /* scales the whole group based on the view width size and stop when that vales equals .745em, resets at desktop */
     font-size: min(2.24vw, 0.9em);
     width: 40.6875em;
@@ -160,12 +160,12 @@
     position: relative;
     z-index: 1;
   }
-  #why-choose-1485 .cs-picture {
+  #why-choose-us .cs-picture {
     overflow: hidden;
     box-sizing: border-box;
     position: absolute;
   }
-  #why-choose-1485 .cs-picture img {
+  #why-choose-us .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -173,14 +173,14 @@
     top: 0;
     left: 0;
   }
-  #why-choose-1485 .cs-picture1 {
+  #why-choose-us .cs-picture1 {
     width: 40.4375em;
     height: 37.5em;
     top: 0;
     left: 0;
     z-index: -1;
   }
-  #why-choose-1485 .cs-picture2 {
+  #why-choose-us .cs-picture2 {
     width: 20em;
     height: 20em;
     border-radius: 50%;
@@ -190,7 +190,7 @@
     right: 0;
     z-index: 10;
   }
-  #why-choose-1485 .cs-flower {
+  #why-choose-us .cs-flower {
     width: 9.5625em;
     height: auto;
     position: absolute;
@@ -198,14 +198,14 @@
     right: 0.75em;
     z-index: 1;
   }
-  #why-choose-1485 .cs-squiggle {
+  #why-choose-us .cs-squiggle {
     width: 13.4375em;
     height: auto;
     position: absolute;
     bottom: 9.0625em;
     left: 3.125em;
   }
-  #why-choose-1485 .cs-mask {
+  #why-choose-us .cs-mask {
     width: 40.5625em;
     height: 37.625em;
     position: absolute;
@@ -213,7 +213,7 @@
     left: -1px;
     z-index: -1;
   }
-  #why-choose-1485 .cs-top {
+  #why-choose-us .cs-top {
     position: absolute;
     top: 0;
     left: 0;
@@ -221,7 +221,7 @@
     width: 100%;
     height: auto;
   }
-  #why-choose-1485 .cs-bottom {
+  #why-choose-us .cs-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -232,13 +232,13 @@
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #why-choose-1485 .cs-container {
+  #why-choose-us .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
-  #why-choose-1485 .cs-image-group {
+  #why-choose-us .cs-image-group {
     font-size: min(1.2vw, 1em);
     flex: none;
   }

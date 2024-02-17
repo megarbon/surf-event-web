@@ -4,14 +4,14 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-1666 {
+    #services {
       padding: var(--sectionPadding);
       background-color: #f7f7f7;
       position: relative;
       overflow: hidden;
       z-index: 1;
     }
-    #services-1666 .cs-container {
+    #services .cs-container {
       width: 100%;
       /* changes to 1280px at small desktop */
       max-width: 36.5rem;
@@ -22,19 +22,19 @@
       /* 40px - 64px */
       gap: clamp(2.5rem, 3.9vw, 4rem);
     }
-    #services-1666 .cs-image-group {
+    #services .cs-image-group {
       width: 100%;
       height: auto;
       margin: 0;
       position: relative;
     }
-    #services-1666 .cs-picture {
+    #services .cs-picture {
       width: 100%;
       min-height: 20.5rem;
       display: block;
       position: relative;
     }
-    #services-1666 .cs-picture img {
+    #services .cs-picture img {
       position: absolute;
       top: 0;
       left: 0;
@@ -42,7 +42,7 @@
       height: 100%;
       object-fit: cover;
     }
-    #services-1666 .cs-floater {
+    #services .cs-floater {
       width: clamp(20.125rem, 40vw, 28.1875rem);
       height: clamp(20.1875rem, 40vw, 28.25rem);
       position: absolute;
@@ -50,7 +50,7 @@
       z-index: 1;
       mix-blend-mode: soft-light;
     }
-    #services-1666 .cs-content {
+    #services .cs-content {
       text-align: left;
       width: 100%;
       max-width: 40.625rem;
@@ -60,15 +60,15 @@
       justify-content: center;
       flex: none;
     }
-    #services-1666 .cs-title {
+    #services .cs-title {
       /* 16px - 24px */
       margin: 0 0 clamp(1rem, 1.96vw, 1.5rem) 0;
     }
-    #services-1666 .cs-text {
+    #services .cs-text {
       /* 16px - 24px */
       margin: 0 0 clamp(1rem, 1.96vw, 1.5rem) 0;
     }
-    #services-1666 .cs-faq-group {
+    #services .cs-faq-group {
       width: 100%;
       padding: 0;
       margin: 0;
@@ -79,7 +79,7 @@
       /* 16px - 20px */
       gap: clamp(1rem, 2.4vw, 1.25rem);
     }
-    #services-1666 .cs-faq-item {
+    #services .cs-faq-item {
       list-style: none;
       width: 100%;
       background-color: transparent;
@@ -88,22 +88,22 @@
       box-sizing: border-box;
       transition: border-bottom 0.3s;
     }
-    #services-1666 .cs-faq-item.active .cs-indicator:before {
+    #services .cs-faq-item.active .cs-indicator:before {
       transform: translate(-50%, -50%) rotate(360deg);
     }
-    #services-1666 .cs-faq-item.active .cs-indicator:after {
+    #services .cs-faq-item.active .cs-indicator:after {
       transform: translate(-50%, -50%) rotate(0deg);
     }
-    #services-1666 .cs-faq-item.active .cs-item-p {
+    #services .cs-faq-item.active .cs-item-p {
       height: auto;
       padding-top: 1rem;
       opacity: 1;
       transform: scaleY(1);
     }
-    #services-1666 .cs-faq-item:hover {
+    #services .cs-faq-item:hover {
       cursor: pointer;
     }
-    #services-1666 .cs-button {
+    #services .cs-button {
       /* 16px - 20px */
       font-size: clamp(1rem, 2vw, 1.25rem);
       line-height: 1.2em;
@@ -123,16 +123,16 @@
       position: relative;
       transition: background-color 0.3s, color 0.3s;
     }
-    #services-1666 .cs-button:hover {
+    #services .cs-button:hover {
       cursor: pointer;
     }
-    #services-1666 .cs-indicator {
+    #services .cs-indicator {
       width: 1.5rem;
       height: 1.5rem;
       position: relative;
       z-index: 1;
     }
-    #services-1666 .cs-indicator:before {
+    #services .cs-indicator:before {
       /* left line */
       content: '';
       width: 1rem;
@@ -147,7 +147,7 @@
       transform: translate(-50%, -50%);
       transition: transform .5s;
     }
-    #services-1666 .cs-indicator:after {
+    #services .cs-indicator:after {
       /* right line */
       content: '';
       width: 1rem;
@@ -162,12 +162,12 @@
       transform: translate(-50%, -50%) rotate(90deg);
       transition: transform .5s;
     }
-    #services-1666 .cs-button-text {
+    #services .cs-button-text {
       width: 90%;
       padding: 0;
       display: block;
     }
-    #services-1666 .cs-item-p {
+    #services .cs-item-p {
       font-size: 0.875rem;
       line-height: 1.5em;
       width: 100%;
@@ -185,12 +185,12 @@
       position: relative;
       transition: opacity 0.3s, padding-bottom 0.3s, padding-top 0.3s;
     }
-    #services-1666 .cs-icon {
+    #services .cs-icon {
       width: 2rem;
       height: 2rem;
       display: block;
     }
-    #services-1666 .cs-button-solid {
+    #services .cs-button-solid {
       font-size: 1rem;
       font-weight: 700;
       line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -208,11 +208,11 @@
       position: relative;
       z-index: 1;
     }
-    #services-1666 .cs-button-solid:before {
+    #services .cs-button-solid:before {
       content: "";
       width: 0%;
       height: 100%;
-      background: #ba0025ff;
+      background: var(--secondaryLight);
       opacity: 1;
       /* add a border radius below this to round corners */
       position: absolute;
@@ -221,13 +221,13 @@
       z-index: -1;
       transition: width 0.3s;
     }
-    #services-1666 .cs-button-solid:hover:before {
+    #services .cs-button-solid:hover:before {
       width: 100%;
     }
   }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
-    #services-1666 .cs-picture {
+    #services .cs-picture {
       height: 100%;
       min-width: 36.5rem;
       width: 48vw;
@@ -237,24 +237,24 @@
   }
   /* Small Desktop - 1024px */
   @media only screen and (min-width: 64rem) {
-    #services-1666 .cs-container {
+    #services .cs-container {
       max-width: 80rem;
       flex-direction: row;
       justify-content: space-between;
       align-items: stretch;
     }
-    #services-1666 .cs-content {
+    #services .cs-content {
       width: 55%;
     }
-    #services-1666 .cs-image-group {
+    #services .cs-image-group {
       width: 100%;
       max-width: 33.875rem;
     }
-    #services-1666 .cs-picture {
+    #services .cs-picture {
       width: 100%;
       min-width: 100%;
     }
-    #services-1666 .cs-floater {
+    #services .cs-floater {
       width: 28.1875rem;
       right: clamp(50%, 18vw, 75%);
       bottom: -6.25rem;

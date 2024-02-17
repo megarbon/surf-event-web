@@ -4,12 +4,12 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #contact-1333 {
+  #contact {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
   }
-  #contact-1333 .cs-container {
+  #contact .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
@@ -22,7 +22,7 @@
     gap: clamp(3rem, 6vw, 5rem);
     position: relative;
   }
-  #contact-1333 .cs-content {
+  #contact .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -32,11 +32,11 @@
     align-items: flex-start;
   }
 
-  #contact-1333 .cs-title {
+  #contact .cs-title {
     max-width: 23ch;
     margin: 0 0 1.75rem 0;
   }
-  #contact-1333 .cs-form {
+  #contact .cs-form {
     width: 100%;
     max-width: 40.625rem;
     /* 32px - 48px top and bottom */
@@ -53,11 +53,11 @@
     flex: none;
     gap: 0.75rem;
   }
-  #contact-1333 .cs-form .cs-title {
+  #contact .cs-form .cs-title {
     /* 16px - 28px */
     margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
   }
-  #contact-1333 .cs-label {
+  #contact .cs-label {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     width: 100%;
@@ -68,7 +68,7 @@
     align-items: flex-start;
     gap: 0.25rem;
   }
-  #contact-1333 .cs-input {
+  #contact .cs-input {
     font-size: 1rem;
     width: 100%;
     height: 3.5rem;
@@ -80,18 +80,18 @@
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
   }
-  #contact-1333 .cs-input::placeholder {
+  #contact .cs-input::placeholder {
     color: #767676;
     opacity: 0.6;
   }
-  #contact-1333 .cs-textarea {
+  #contact .cs-textarea {
     min-height: 7.5rem;
     padding-top: 1.5rem;
     /* 16px - 28px */
     margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
     font-family: inherit;
   }
-  #contact-1333 .cs-button-solid {
+  #contact .cs-button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -112,7 +112,7 @@
     box-sizing: border-box;
     transition: color 0.3s;
   }
-  #contact-1333 .cs-button-solid:before {
+  #contact .cs-button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -124,20 +124,20 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #contact-1333 .cs-button-solid:hover {
+  #contact .cs-button-solid:hover {
     color: #fff;
   }
-  #contact-1333 .cs-button-solid:hover:before {
+  #contact .cs-button-solid:hover:before {
     width: 100%;
   }
-  #contact-1333 .cs-submit {
+  #contact .cs-submit {
     width: 100%;
     min-width: 17.6875rem;
   }
-  #contact-1333 .cs-submit:hover {
+  #contact .cs-submit:hover {
     cursor: pointer;
   }
-  #contact-1333 .cs-faq-group {
+  #contact .cs-faq-group {
     padding: 0;
     margin: 0;
     display: flex;
@@ -145,34 +145,34 @@
     align-items: center;
     flex-direction: column;
   }
-  #contact-1333 .cs-faq-item {
+  #contact .cs-faq-item {
     list-style: none;
     width: 100%;
     border-bottom: 1px solid #e8e8e8;
     transition: border-bottom 0.3s;
   }
-  #contact-1333 .cs-faq-item.active {
+  #contact .cs-faq-item.active {
     border-color: var(--primary);
   }
-  #contact-1333 .cs-faq-item.active .cs-button {
+  #contact .cs-faq-item.active .cs-button {
     color: var(--primary);
   }
-  #contact-1333 .cs-faq-item.active .cs-button:before {
+  #contact .cs-faq-item.active .cs-button:before {
     background-color: var(--primary);
     transform: rotate(315deg);
   }
-  #contact-1333 .cs-faq-item.active .cs-button:after {
+  #contact .cs-faq-item.active .cs-button:after {
     background-color: var(--primary);
     transform: rotate(-315deg);
   }
-  #contact-1333 .cs-faq-item.active .cs-item-p {
+  #contact .cs-faq-item.active .cs-item-p {
     height: auto;
     /* 20px - 24px bottom */
     /* 16px - 24px left & right */
     padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 2vw, 1.5rem) 0;
     opacity: 1;
   }
-  #contact-1333 .cs-button {
+  #contact .cs-button {
     font-size: 1rem;
     line-height: 1.2em;
     text-align: left;
@@ -188,10 +188,10 @@
     position: relative;
     transition: background-color 0.3s, color 0.3s;
   }
-  #contact-1333 .cs-button:hover {
+  #contact .cs-button:hover {
     cursor: pointer;
   }
-  #contact-1333 .cs-button:before {
+  #contact .cs-button:before {
     /* left line */
     content: "";
     width: 0.5rem;
@@ -208,7 +208,7 @@
     transform-origin: left center;
     transition: transform 0.5s;
   }
-  #contact-1333 .cs-button:after {
+  #contact .cs-button:after {
     /* right line */
     content: "";
     width: 0.5rem;
@@ -225,11 +225,11 @@
     transform-origin: right center;
     transition: transform 0.5s;
   }
-  #contact-1333 .cs-button-text {
+  #contact .cs-button-text {
     width: 80%;
     display: block;
   }
-  #contact-1333 .cs-item-p {
+  #contact .cs-item-p {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -247,15 +247,15 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #contact-1333 .cs-container {
+  #contact .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
   }
-  #contact-1333 .cs-form {
+  #contact .cs-form {
     width: 45vw;
   }
-  #contact-1333 .cs-submit {
+  #contact .cs-submit {
     width: auto;
   }
 }
