@@ -116,14 +116,23 @@
       </div>
     </section>
 
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="sticky navbar">
+      <div class="brand display__logo">
+        <a href="#top" class="nav__link"> <span class="logo">Logo</span></a>
+      </div>
+
+      <input type="checkbox" id="nav" class="hidden" />
+      <label for="nav" class="nav__open"><i></i><i></i><i></i></label>
+      <div class="nav">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- ============================================ -->
     <!--               Why Choose Us                  -->
