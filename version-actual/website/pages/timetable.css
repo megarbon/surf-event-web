@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-image: url("../../images/stock/vertical1.jpg");
+  background-image: url("../../images/stock/surfer3.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -95,3 +95,18 @@ body {
   margin-right: 8px;
 }
 
+@media (max-width: 550px) {
+  .event {
+    flex-direction: column;
+  }
+
+  .event .event-left {
+    min-width: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .event .event-left .event-date .date,
+  .event .event-left .event-date .month {
+    font-size: 24px;
+  }
+}
