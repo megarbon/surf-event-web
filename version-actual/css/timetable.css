@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-image: url("../../images/stock/vertical1.jpg");
+  background-image: url("../images/stock/vertical1.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.navbar{
+.navbar {
   background-color: var(--primaryLight) !important;
 }
 
@@ -99,7 +99,7 @@ body {
 .event .event-right .event-timing i {
   margin-right: 8px;
 }
-.event .event-right .event-timing:hover{
+.event .event-right .event-timing:hover {
   color: var(--primaryLight);
 }
 
@@ -155,4 +155,11 @@ video {
   color: #ffffff;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
   font-weight: bold;
+  background-color: #444444b4;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.transcription-text span {
+  color: #ffc164ff;
 }
