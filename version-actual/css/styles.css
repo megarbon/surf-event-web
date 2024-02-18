@@ -13,7 +13,7 @@
   --primaryLight: #0e3755ff; /* Prussian Blue */
   --secondary: #ebdecfff; /* Almond */
   --secondaryLight: #ba0025ff; /* Fire Brick */
-  --headerColor: #60acb6ff; /* Moonstone */
+  --headerColor: rgb(16, 132, 148); /* Moonstone */
   --bodyTextColor: #4e4b66; /* Body Text Color */
   --bodyTextColorWhite: #fafbfc; /* Body Text Color White */
 
