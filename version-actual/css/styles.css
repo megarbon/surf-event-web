@@ -689,9 +689,13 @@ img {
   gap: 20px;
   margin-bottom: 1.5em;
 }
-
-#timer {
-  font-size: 3rem;
-  color: #ffffff;
-  padding: 20px;
+.content {
+  h1{
+    font-size: var(--h1-font-size);
+    font-family: var(--body-font-family);
+  }
+  h2{
+    font-size: var(--h2-font-size);
+    font-family: var(--body-font-family);
+  }
 }
