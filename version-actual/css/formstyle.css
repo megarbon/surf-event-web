@@ -54,7 +54,7 @@
   margin: 0;
   color: var(--bodyTextColor);
 }
-#cs-contact #cs-form-242 {
+#cs-contact #cs-form-contact {
   width: 100%;
   /* 32px - 40px */
   margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
@@ -304,13 +304,13 @@
 <---  testimonial section        -->
 <--- -------------------------- -*/
 
-#reviews-1529 {
+#reviews-section {
   padding: var(--sectionPadding);
   overflow: hidden;
   position: relative;
   z-index: 1;
 }
-#reviews-1529 .cs-container {
+#reviews-section .cs-container {
   /* changes to 1280px at tablet */
   max-width: 34.375rem;
   margin: auto;
@@ -320,7 +320,7 @@
   /* 48px - 64px */
   gap: clamp(3rem, 6.3vw, 4rem);
 }
-#reviews-1529 .cs-content {
+#reviews-section .cs-content {
   /* set text align to left if content needs to be left aligned */
   text-align: center;
   width: 100%;
@@ -330,7 +330,7 @@
   /* centers content horizontally, set to flex-start to left align */
   align-items: center;
 }
-#reviews-1529 .cs-review {
+#reviews-section .cs-review {
   width: 100%;
   /* 32px - 80px top & bottom, 24px to 110px sides*/
   padding: clamp(2rem, 7vw, 5rem) clamp(1.5rem, 7vw, 6.875rem);
@@ -345,7 +345,7 @@
   position: relative;
   z-index: 1;
 }
-#reviews-1529 .cs-review:before {
+#reviews-section .cs-review:before {
   /* background-color */
   content: "";
   width: 100%;
@@ -360,7 +360,7 @@
   left: 0;
   z-index: -1;
 }
-#reviews-1529 .cs-image-group {
+#reviews-section .cs-image-group {
   width: 100%;
   height: auto;
   margin: 0;
@@ -368,14 +368,14 @@
   z-index: 1;
   aspect-ratio: 1.15966387;
 }
-#reviews-1529 .cs-picture {
+#reviews-section .cs-picture {
   width: 100%;
   height: 100%;
   display: block;
   position: relative;
   overflow: hidden;
 }
-#reviews-1529 .cs-picture img {
+#reviews-section .cs-picture img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -384,10 +384,10 @@
   left: 0;
   z-index: -1;
 }
-#reviews-1529 .cs-flex {
+#reviews-section .cs-flex {
   max-width: 46rem;
 }
-#reviews-1529 .cs-quote {
+#reviews-section .cs-quote {
   /* 14px - 20px */
   font-size: clamp(0.875rem, 2vw, 1.25rem);
   line-height: 1.5em;
@@ -395,7 +395,7 @@
   margin: 0 0 1.5rem;
   color: #4e4b66;
 }
-#reviews-1529 .cs-name {
+#reviews-section .cs-name {
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.2em;
@@ -403,14 +403,14 @@
   color: #1a1a1a;
   display: block;
 }
-#reviews-1529 .cs-job {
+#reviews-section .cs-job {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.2em;
   color: #ff6d41;
   display: block;
 }
-#reviews-1529 .cs-mask {
+#reviews-section .cs-mask {
   /* SVG Colors */
   --maskBorder: #ffffff;
   --maskBG: #fff0ec;
@@ -422,10 +422,10 @@
   bottom: -1px;
   left: -1px;
 }
-#reviews-1529 .cs-mask path {
+#reviews-section .cs-mask path {
   transition: stroke 0.3s;
 }
-#reviews-1529 .cs-blob-wrapper {
+#reviews-section .cs-blob-wrapper {
   width: 100%;
   height: 100%;
   /* 32px - 100px */
@@ -438,10 +438,10 @@
   left: 0;
   z-index: -1;
 }
-#reviews-1529 .cs-blob {
+#reviews-section .cs-blob {
   --blobColor: var(--secondary);
 }
-#reviews-1529 .cs-blob1 {
+#reviews-section .cs-blob1 {
   width: 6.25rem;
   height: auto;
   opacity: 0.25;
@@ -449,7 +449,7 @@
   top: -0.3125rem;
   left: -1.875rem;
 }
-#reviews-1529 .cs-blob2 {
+#reviews-section .cs-blob2 {
   /* 239px - 461px */
   width: clamp(14.9375rem, 40vw, 28.8125rem);
   height: auto;
@@ -458,11 +458,11 @@
   right: -3.125rem;
   bottom: -0.9375rem;
 }
-#reviews-1529 .cs-graphic {
+#reviews-section .cs-graphic {
   position: absolute;
   z-index: 1;
 }
-#reviews-1529 .cs-graphic-one {
+#reviews-section .cs-graphic-one {
   /* 48px - 138px */
   width: clamp(3rem, 10vw, 8.625rem);
   height: auto;
@@ -470,7 +470,7 @@
   right: -1.25rem;
   transform: rotate(104deg);
 }
-#reviews-1529 .cs-graphic-two {
+#reviews-section .cs-graphic-two {
   /* 88px - 197px */
   width: clamp(5.5rem, 15vw, 12.3125rem);
   height: auto;
@@ -478,22 +478,42 @@
   left: -2rem;
 }
 
-#reviews-1529 .cs-container {
+#reviews-section .cs-container {
   max-width: 80rem;
 }
-#reviews-1529 .cs-review {
+#reviews-section .cs-review {
   max-width: none;
   flex-direction: row;
 }
-#reviews-1529 .cs-image-group,
-#reviews-1529 .cs-flex {
+#reviews-section .cs-image-group,
+#reviews-section .cs-flex {
   flex: 1 0 0;
 }
-#reviews-1529 .cs-image-group {
+#reviews-section .cs-image-group {
   max-width: 16.25rem;
 }
 
-#cs-form-242 {
+#cs-form-contact {
   /* fondo con degradado */
   background: linear-gradient(90deg, #97cbfc83 0%, #4b66ff25 100%);
+}
+
+.cs-text a {
+  color: var(--headerColor); /* Cambia el color del texto del enlace */
+  text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+  font-weight: bold; /* Hace que el texto del enlace sea más audaz para resaltarlo */
+  padding: 5px 10px; /* Agrega un espacio alrededor del texto del enlace para hacerlo más fácil de hacer clic */
+  border-radius: 5px; /* Aplica esquinas redondeadas para hacer que el enlace se destaque */
+  background-color: #f0f0f0; /* Agrega un fondo para hacer que el enlace sea más visible */
+  transition: background-color 0.3s, color 0.3s; /* Agrega una transición suave para cambios de color */
+}
+
+.cs-text a:hover {
+  background-color: #02063b;
+  color: var(--headerColor);
+}
+
+#contact a:focus {
+  outline: 2px solid var(--headerColor);
+  outline-offset: 4px;
 }

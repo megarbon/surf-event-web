@@ -8,6 +8,15 @@
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+@font-face {
+  font-family: 'Geist';
+  src: url('../fonts/GeistMono-Medium.woff2') format('woff2'),
+       url('../fonts/GeistMonoVariableVF.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   --primary: #ffc164ff; /* Hunyadi Yellow */
   --primaryLight: #0e3755ff; /* Prussian Blue */
