@@ -45,6 +45,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
+  border-radius: 5px;
   font-weight: bold;
   text-align: center;
   padding: 20px;
@@ -79,20 +80,27 @@ body {
 }
 
 .event .event-right .event-timing {
-  background: #218bbb; /* Fondo azul */
-  color: #fff; /* Texto blanco */
+  background: #218bbb;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   width: fit-content;
   padding: 8px 16px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 14px;
 }
 
-.event .event-right .event-timing img {
-  height: 20px;
+.event .event-right .event-timing a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.event .event-right .event-timing i {
   margin-right: 8px;
+}
+.event .event-right .event-timing:hover{
+  color: var(--primaryLight);
 }
 
 @media (max-width: 550px) {
