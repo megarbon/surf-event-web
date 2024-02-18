@@ -148,6 +148,9 @@
 	.nav .nav__items .nav__item:nth-child(4) a {
 		transition-delay: 0.5s;
 	}
+	.nav .nav__items .nav__item:nth-child(5) a {
+		transition-delay: 0.6s;
+	}
 
 	.nav .nav__items .nav__item:not(:first-child) {
 		margin-left: 0;
