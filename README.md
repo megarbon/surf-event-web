@@ -2,6 +2,8 @@
 
 Este proyecto forma parte del trabajo final para el grado de Desarrollo de Aplicaciones Web (DAW). El objetivo principal es diseñar una página web para eventos de surf que cumpla con los estándares de usabilidad y accesibilidad.
 
+![Captura de Pantalla](/docs/screenshots/mock1.png?raw=true "Landing Page")
+
 ## Características del Proyecto
 
 - **Tema:** Página de eventos de surf y limpieza de playas.
@@ -33,3 +35,8 @@ El diseño y desarrollo de la página se basaron en principios y normativas de u
 
 ¡Disfruta explorando la página de eventos de surf diseñada con enfoque en usabilidad y accesibilidad!
 
+## Capturas de Pantalla
+
+![Captura de Pantalla](/docs/screenshots/mock4.png?raw=true "Landing Page")
+![Captura de Pantalla](/docs/screenshots/mock3.png?raw=true "Landing Page")
+![Captura de Pantalla](/docs/screenshots/mock2.png?raw=true "Landing Page")
